@@ -1,25 +1,28 @@
 @font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
 
 .main {
-  transform: translateX(150px);
+  /* transform: translateX(150px); */
   transition-duration: 60ms;
   min-width: 800px;
-  padding: 0 50px;
+  padding: 0 0px;
   height: 500px;
-  margin-left: 50px;
+  flex: 50%;
+  text-align: center;
+  /* margin-left: 50px; */
 }
 .main img{
-  width: 600px;
+  /* width: 600px; */
 }
 
 .transitionsItem {
   overflow: hidden;
   width: 100%;
   color: white;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 6.5em;
-  font-weight: 800;
+  /* display: flex; */
+  /* justify-content: left; */
+  /* text-align: center; */
+  font-size: 3.5em;
+  font-weight: 500px;
   text-transform: uppercase;
   will-change: transform, opacity, height;
   white-space: nowrap;
@@ -36,15 +39,16 @@
   align-items: center;
   height: 650px;
   justify-items:center;
-  ;
- 
 }
 .fanta{
-  margin-right: 50px;
-  margin-left: 120px;
+  /* margin-right: 50px; */
+  /* margin-left: 120px; */
+  justify-content: center;
+  align-items: center;
   padding: 0;
+  flex: 50%;
 
 }
 .fanta img{
-  min-width: 400px;
+  /* min-width: 400px; */
 }
