@@ -26,4 +26,9 @@ h6{
 .card{
     margin-bottom: 1vw;
 }
-
+@media (max-width: 450px) {
+    h5{
+        font-size: 15px;
+        width: 150px;
+    }
+}

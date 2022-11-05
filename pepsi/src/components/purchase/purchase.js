@@ -4,7 +4,6 @@ import Navbar from '../HomePage/navbar'
 import { useState} from 'react'
 import Products from './products.json'
 const PurchesPage = ()=>{
-    console.log(Products)
     const [fileredItem, setFileredItem] =useState(Products)
     const getData = (data)=>{
         const BigData = data.toUpperCase()
