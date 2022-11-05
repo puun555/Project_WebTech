@@ -43,6 +43,17 @@
     margin-left: 20px;
     cursor: pointer;
 }
+/* .navbar-item-img:hover{
+    animation: spin 0.4s linear alternate;
+}
+@keyframes spin {
+    50% {
+        transform: rotate(420deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
 .navbar-right .navbar-item{
     border-radius: 30px;
     background-color: #9388ff;

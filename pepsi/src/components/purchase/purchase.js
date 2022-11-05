@@ -2,6 +2,7 @@ import ShowProduct from './showAllproduct/ShowProduct'
 import './purchase.css'
 import Navbar from '../HomePage/navbar'
 import { useState} from 'react'
+
 const PurchesPage = ()=>{
     const DummyProduct = [
         {   

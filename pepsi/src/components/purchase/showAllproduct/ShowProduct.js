@@ -49,19 +49,16 @@ const ShowProduct = (props)=>{
         })
     }
 
-    const [useItems, setUseItem ] = useState([])
     useEffect(() => {
         if(NewItems.length>=1){
             localStorage.setItem('items', JSON.stringify(NewItems));
         }
     }, [NewItems]); 
-    console.log(useItems)
     useEffect(()=>{
         const item = JSON.parse(localStorage.getItem('items'));
             if(item){
                 setNewItem(item)
             }
-        
     }, [])
     return (
         <div className="showProduct">

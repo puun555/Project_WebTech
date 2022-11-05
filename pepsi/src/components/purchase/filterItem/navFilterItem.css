@@ -3,3 +3,17 @@
     margin-right: 2vw;
     width: 500px;
 }
+@media (max-width: 1100px) {
+   .coverform{
+        margin-right: 5vw;
+        width: 300px;
+        font-size: 10px;
+   }
+}
+@media (max-width: 700px) {
+    .coverform{
+         margin-left: 0;
+         width: 200px;
+         font-size: 10px;
+    }
+ }
