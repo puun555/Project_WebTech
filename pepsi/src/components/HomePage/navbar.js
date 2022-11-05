@@ -11,10 +11,10 @@ const Navbar = () =>{
                 </Link>
             </div>
             <div className="navbar-center">
-                <Link to="/product"><div className='navbar-item' >view product</div></Link>
+                <Link to="/product"><div className='navbar-item' style={{"padding-left":'200px'}}>view product</div></Link>
                 {/* <div className='navbar-item'>what's new</div>
                 <div className='navbar-item'>newsletter</div> */}
-                <div className='navbar-item' style={{"padding-right":'250px'}} >contact us</div>
+                <Link to="/footer"><div className='navbar-item' style={{"padding-right":'200px'}} >contact us</div></Link>
             </div>
             <div className="navbar-right">
               <Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link>
