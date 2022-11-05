@@ -1,6 +1,6 @@
 import Navbar from './navbar';
 import React from 'react';
-import Nitro from './nitro';
+import Banner from './banner';
 import './homePage.css'
 import Pourstep from './pourstep.tsx';
 import SectionVideo from './video';
@@ -17,7 +17,7 @@ function Homepage () {
                 <div className='product-soda'></div>
                 <div className='product-cherry'></div>
             </section>
-            <Nitro></Nitro>
+            <Banner></Banner>
             <Schwepp></Schwepp>
             <SectionCoke></SectionCoke>
             <SectionVideo></SectionVideo>
