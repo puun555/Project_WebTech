@@ -69,33 +69,28 @@ const FilterCanvas = (props)=>{
                 <Offcanvas show={show} onHide={handleClose} >
                     <Offcanvas.Header closeButton key={props.newDataAdd.id}>
                         <Offcanvas.Title>Your Items</Offcanvas.Title>
+                        <button className='btn bg-primary' style={{marginLeft:'1vw', color:'white'}}>สั่งซื้อสิ้นค้า</button>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                     {props.newDataAdd.map(data =>(
                         <div className='card' key={data.id}>
                             <div className='row'>
-                                <div className='col'>
+                                <div className='big-cardOffcanvas'>
                                     <img src={data.picture}
-                                        style={{
-                                            width:'70px',
-                                            margin:'10px'
-                                        }}
+                                       className='img-offcanvas'
                                     >
-
                                     </img>
-                                </div>
-                                <div className='col'>
-                                    <div className='card-body'>
-                                        <h5>{data.name}</h5>
-                                        <p>{data.price} Bath</p>
-                                        <p>จำนวน {data.count}</p>
-                                        <button className='btn bg-primary'  style={{marginLeft:'1vw', color:'white'}}onClick={()=>{
-                                               newData(data)
-                                        }}>Delete</button>
-                                        <button className='btn bg-primary' style={{marginLeft:'1vw', color:'white'}} onClick={()=>{
-                                                delData(data)
-                                        }}> add</button>
-                                    </div>
+                                        <div className='card-offcanvas'>
+                                            <h5>{data.name}</h5>
+                                            <h6>Price :{data.price} Bath</h6>
+                                            <h6>จำนวน {data.count}</h6>
+                                            <button className='btn bg-primary'  style={{color:'white', width: '2vw'}}onClick={()=>{
+                                                newData(data)
+                                            }}>-</button>
+                                            <button className='btn bg-primary' style={{marginLeft:'1vw', color:'white'}} onClick={()=>{
+                                                    delData(data)
+                                            }}>+</button>
+                                        </div>
                                 </div>
                             </div>
                         </div>

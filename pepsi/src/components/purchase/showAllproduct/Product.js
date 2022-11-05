@@ -21,10 +21,10 @@ const Product = (props)=>{
             style={{paddingLeft: '3vw', backgroundColor: 'black'}}
         >
              <Row >
-                <Col sm={3}>
+                <Col md={4} >
                     <ListProduct></ListProduct>
                 </Col>
-                <Col sm={8}>
+                <Col md={8}>
                     <Row  className="row-product"
                     style={{marginTop :'5vw' , marginLeft: '3vw'}}
                     >
