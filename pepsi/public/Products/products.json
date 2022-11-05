@@ -1027,7 +1027,7 @@
     },
     {
         "id": 28,
-        "name": "FANTA PEACH",
+        "name": "SCHWEPPES GINGER ALE",
         "count": 1,
         "price": 19,
         "nutrition_facts": {
@@ -1065,7 +1065,7 @@
     },
     {
         "id": 29,
-        "name": "FANTA PEACH",
+        "name": "SCHWEPPES RASPBERRY GINGER ALE",
         "count": 1,
         "price": 19,
         "nutrition_facts": {
@@ -1100,5 +1100,385 @@
             }
         },
         "img_product": "./img_product/SCHWEPPES RASPBERRY GINGER ALE.png"
+    },
+    {
+        "id": 30,
+        "name": "SCHWEPPES TONIC WATER",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                1,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 130,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "55mg",
+                    "2%"
+                ],
+                "carbohydrate": [
+                    "33g",
+                    "12%"
+                ],
+                "sugars": [
+                    "33g",
+                    "65%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SCHWEPPES TONIC WATER.png"
+    },
+    {
+        "id": 31,
+        "name": "SCHWEPPES BITTER LEMON",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                1,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 189,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "32mg",
+                    "1%"
+                ],
+                "carbohydrate": [
+                    "45g",
+                    "15%"
+                ],
+                "sugars": [
+                    "45g",
+                    ""
+                ],
+                "protein": "0.4g"
+            }
+        },
+        "img_product": "./img_product/SCHWEPPES BITTER LEMON.png"
+    },
+    {
+        "id": 32,
+        "name": "SCHWEPPES DRY GINGER ALE",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                1,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 114,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "60mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "27g",
+                    "9%"
+                ],
+                "sugars": [
+                    "27g",
+                    ""
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SCHWEPPES DRY GINGER ALE.png"
+    },
+    {
+        "id": 33,
+        "name": "SCHWEPPES SODA WATER",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                1,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 0,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "72mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "0g",
+                    "0%"
+                ],
+                "sugars": [
+                    "0g",
+                    ""
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SCHWEPPES SODA WATER.png"
+    },
+    {
+        "id": 34,
+        "name": "SPRITE",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                12,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 140,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "65mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "38g",
+                    "14%"
+                ],
+                "sugars": [
+                    "38g",
+                    "76%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE.png"
+    },
+    {
+        "id": 35,
+        "name": "SPRITE ZERO SUGAR",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                12,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 140,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "35mg",
+                    "2%"
+                ],
+                "carbohydrate": [
+                    "0g",
+                    "0%"
+                ],
+                "sugars": [
+                    "0g",
+                    "0%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE ZERO SUGAR.png"
+    },
+    {
+        "id": 36,
+        "name": "SPRITE CHERRY",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                12,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 120,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "65mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "33g",
+                    "12%"
+                ],
+                "sugars": [
+                    "33g",
+                    "65%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE CHERRY.png"
+    },
+    {
+        "id": 37,
+        "name": "SPRITE LYMONADE",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                12,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 130,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "65mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "35g",
+                    "13%"
+                ],
+                "sugars": [
+                    "34g",
+                    "69%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE LYMONADE.png"
+    },
+    {
+        "id": 38,
+        "name": "SPRITE WINTER SPICED CRANBERRY",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                1,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 120,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "65mg",
+                    "3%"
+                ],
+                "carbohydrate": [
+                    "33g",
+                    "12%"
+                ],
+                "sugars": [
+                    "33g",
+                    "65%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE WINTER SPICED CRANBERRY.png"
+    },
+    {
+        "id": 39,
+        "name": "SPRITE WINTER SPICED CRANBERRY ZERO SUGAR",
+        "count": 1,
+        "price": 19,
+        "nutrition_facts": {
+            "serving_size": [
+                "12 fl oz",
+                "355 mL"
+            ],
+            "servings_per_container": [
+                12,
+                "can"
+            ],
+            "amount_per_serving": "",
+            "calories": 120,
+            "daily_value": {
+                "fat": [
+                    "0g",
+                    "0%"
+                ],
+                "sodium": [
+                    "35mg",
+                    "2%"
+                ],
+                "carbohydrate": [
+                    "0g",
+                    "12%"
+                ],
+                "sugars": [
+                    "0g",
+                    "0%"
+                ],
+                "protein": "0g"
+            }
+        },
+        "img_product": "./img_product/SPRITE WINTER SPICED CRANBERRY ZERO SUGAR.png"
     }
 ]

@@ -16,7 +16,7 @@ const Navbar = () =>{
                 <div className='navbar-item'>contact us</div>
             </div>
             <div className="navbar-right">
-              <Link to="/purches"><a><div className='navbar-item'>buy pepsi products</div></a></Link>
+              <Link to="/purches"><a><div className='navbar-item' id='buy'>buy pepsi products</div></a></Link>
             </div>
         </div>
     )
