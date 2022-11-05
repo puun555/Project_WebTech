@@ -4,6 +4,7 @@ import Navbar from '../HomePage/navbar'
 import { useState} from 'react'
 import Products from './products.json'
 const PurchesPage = ()=>{
+    {window.scroll(0,0)}
     console.log(Products)
     const [fileredItem, setFileredItem] =useState(Products)
     const getData = (data)=>{
