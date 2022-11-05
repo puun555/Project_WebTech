@@ -33,14 +33,16 @@
   color:#b1abf3 ;
 }
 .product-item .productName{
-  color:black;
+  position: relative;
+  color:white;
   font-size: 12px;
+  top:.7vw;
   padding: 10px;
   animation: transitionIn backwards .95s;
 }
 #tooltip{
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
   top:50%;
   z-index: 2;
   color:white;

@@ -1,6 +1,6 @@
+
 .detail-body{
     height: 100%;
-    
 }
 .detail-container{
     display: flex;
@@ -141,4 +141,22 @@
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-blend-mode:saturation;
     transform: scale(1.2);
+}
+@media screen and (max-width:900px) {
+    .detail-container{
+        flex-direction: column;
+    }
+    .detail-background{
+        height: 170%;
+    }
+    .detail-img{
+        order:1;
+    }
+    .detail-container img{
+        width:200px;
+    }
+    .detail-box{
+        order:2;
+    }
+    
 }

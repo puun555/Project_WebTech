@@ -62,7 +62,7 @@ const ProductDetail = () =>{
                                 <Link to="/purches"><div className='navbar-item'>Buy now</div></Link>
                         </div>
                     </div>
-                    <img src={`../${Item[page].img_product}`} alt=""/>
+                    <img className="detail-img" src={`../${Item[page].img_product}`} alt=""/>
                 </div>
             </div>
     )
