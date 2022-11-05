@@ -13,6 +13,13 @@
   max-width: 100%;
   top:50px;
 }
+.product-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #b1abf3;
+  z-index: -1;
+}
 .product-navbar .navbar{
   background-color: white;
   color:rgb(102, 102, 102);
@@ -68,6 +75,7 @@
   border-radius: 0 0 50% 0;
   transition: .5s ;
 }
+
 .product-item:hover .background-color{
   animation: bg forwards .5s;
   z-index: 1;

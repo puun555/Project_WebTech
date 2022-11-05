@@ -5,7 +5,9 @@ import "./ProductPage.css"
 const ProductPage = () =>{
   return (
       <div className="product-navbar"><Navbar />
+        
           <div className="product-container product-body">
+          <div className="product-bg"></div>
             {products.map((element)=>{
               return <Product {...element} key={element.id}/>
             })}
