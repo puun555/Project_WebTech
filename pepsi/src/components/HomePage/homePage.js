@@ -1,6 +1,7 @@
 import Navbar from './navbar';
 import React from 'react';
 import Banner from './banner';
+import Footer from './footer';
 import './homePage.css'
 import Pourstep from './pourstep.tsx';
 import SectionVideo from './video';
@@ -22,8 +23,7 @@ function Homepage () {
             <SectionCoke></SectionCoke>
             <SectionVideo></SectionVideo>
             <Pourstep></Pourstep>
-            <div style={{height: "100em"}} />
-
+            <Footer></Footer>
         </div>
     )
 }
