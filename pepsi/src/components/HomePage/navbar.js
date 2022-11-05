@@ -1,4 +1,4 @@
-import pepsiLogo from '../assets/homePage/pepsiLogo.png'
+import img from '../assets/homePage/imgicon.png'
 import {Link} from "react-router-dom";
 import './navbar.css'
 const Navbar = () =>{
@@ -7,13 +7,13 @@ const Navbar = () =>{
             <div className="navbar-left">
                 <Link to="/">
                     <div className="navbar-item">
-                        {/* <img src={pepsiLogo}/> */}
+                        {/* <img src={imgicon}/> */}
                         Kumi Shop
                     </div>
                 </Link>
             </div>
             <div className="navbar-center">
-                <Link to="/product"><div className='navbar-item' style={{"padding-left":'40px'}} >view product</div></Link>
+                <Link to="/product"><div className='navbar-item' >view product</div></Link>
                 <div className='navbar-item'>what's new</div>
                 <div className='navbar-item'>newsletter</div>
                 <div className='navbar-item' style={{"padding-right":'40px'}} >contact us</div>
