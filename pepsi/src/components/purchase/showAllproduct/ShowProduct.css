@@ -1,7 +1,7 @@
 .showProduct{
     padding-top:  10vw;
     background-color: #242230;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .top{
     align-items: center;
@@ -13,4 +13,7 @@
     height: 100px;
     justify-content: space-between;
     border-radius: 20px;
+}
+.container{
+    background-color: white;
 }
