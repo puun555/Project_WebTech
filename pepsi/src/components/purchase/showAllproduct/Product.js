@@ -25,7 +25,7 @@ const Product = (props)=>{
                 </Col>
                 <Col md={8}>
                     <Row  className="row-product"
-                    style={{marginTop :'5vw' , marginLeft: '3vw'}}
+                    style={{marginTop :'5vw' , marginLeft: '2vw'}}
                     >
                     {props.items.map(item =>(
                         <CardProduct 
