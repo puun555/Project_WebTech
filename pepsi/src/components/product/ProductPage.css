@@ -24,25 +24,25 @@
   background-color: white;
   color:rgb(102, 102, 102);
 }
-.product-navbar .navbar a{
+.product-navbar .navbar .navbar-center a{
   color:#8578fa;
   text-decoration: none;
 }
 
-.product-navbar .navbar a:hover{
+.product-navbar .navbar .navbar-center a:hover{
   color:#b1abf3 ;
 }
 .product-item .productName{
   position: relative;
   color:white;
-  font-size: 12px;
+  font-size: 15px;
   top:.7vw;
   padding: 10px;
   animation: transitionIn backwards .95s;
 }
 #tooltip{
   position: absolute;
-  font-size: 15px;
+  font-size: 18px;
   top:50%;
   z-index: 2;
   color:white;
