@@ -1,0 +1,54 @@
+
+ .card-product{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+    padding: 0;
+ }
+ .pepsiImg{
+    margin-top: 1vw;
+    margin-left: 4.5vw;
+    width: 100px;
+ }
+ 
+ @media (max-width: 1399px) {
+    .card-product{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .pepsiImg{
+        width: 80px;
+        margin-left: 4vw;
+    }
+}
+@media (max-width: 1199px) {
+    .card-product{
+        width: 250px;
+    }
+    .pepsiImg{
+        width: 100px;
+        margin-left: 6vw;
+    }
+}
+@media (max-width: 991px) {
+    .card-product{
+        margin-left: 3vw;
+
+        width: 180px;
+    }
+    .pepsiImg{
+        width: 80px;
+        margin-left: 5vw;
+    }
+}
+@media (max-width: 770px) {
+    .card-product{
+        margin-left: 3vw;
+
+        width: 180px;
+    }
+    .pepsiImg{
+        width: 80px;
+        margin-left: 5vw;
+    }
+}

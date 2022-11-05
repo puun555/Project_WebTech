@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button'
 import { useState ,useEffect} from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import './FillterCanvas.css'
 const FilterCanvas = (props)=>{
     const [showCount, setShowCount] = useState(false)
     const [show, setShow] = useState(false);
@@ -43,6 +43,7 @@ const FilterCanvas = (props)=>{
                     style={{ width: "4rem", height: "4rem", position: "relative" , right: '1.5vw'}}
                     variant="outline-primary"
                     onClick={handleShow}
+                    className='button-market'
                     >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
