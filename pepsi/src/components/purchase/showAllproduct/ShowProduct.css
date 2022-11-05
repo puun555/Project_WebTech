@@ -5,15 +5,15 @@
 }
 .top{
     align-items: center;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    /* margin-left: 15vw;
+    margin-right: 15vw; */
     margin-bottom: 5vw;
     background-color: #9688ff;
     display: flex;
     height: 100px;
     justify-content: space-between;
     border-radius: 20px;
-}
-.container{
-    background-color: white;
+    width: 87%;
+    margin-right: auto;
+    margin-left: auto;
 }
