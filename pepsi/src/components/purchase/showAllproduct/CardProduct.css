@@ -52,3 +52,24 @@
         margin-left: 5vw;
     }
 }
+@media (max-width: 450px) {
+    .card-product{
+        margin-left: 2vw;
+
+        width: 180px;
+    }
+    .pepsiImg{
+        width: 80px;
+        margin-left: 5vw;
+    }
+}
+@media (max-width: 400px) {
+    .card-product{
+        margin-left: 3vw;
+        width: 150px;
+    }
+    .pepsiImg{
+        width: 80px;
+        margin-left: 6vw;
+    }
+}

@@ -12,7 +12,7 @@ const NavFilterItem = (props)=>{
         <div className='coverform'>
             <Form>
                 <InputGroup className="mb-3">
-                    <InputGroup.Text id="basic-addon1"  >Search</InputGroup.Text>
+                    <InputGroup.Text id="basic-addon1"  ></InputGroup.Text>
                         <Form.Control
                         placeholder="What do you want"
                         aria-describedby="basic-addon2"
