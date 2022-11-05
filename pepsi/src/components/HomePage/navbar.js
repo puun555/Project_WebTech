@@ -1,4 +1,3 @@
-import img from '../assets/homePage/imgicon.png'
 import {Link} from "react-router-dom";
 import './navbar.css'
 const Navbar = () =>{
@@ -7,7 +6,6 @@ const Navbar = () =>{
             <div className="navbar-left">
                 <Link to="/">
                     <div className="navbar-item">
-                        {/* <img src={imgicon}/> */}
                         Kumi Shop
                     </div>
                 </Link>
