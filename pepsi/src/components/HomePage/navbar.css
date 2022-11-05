@@ -24,6 +24,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    
 }
 .navbar-left .navbar-item{
     border-radius: 30px;

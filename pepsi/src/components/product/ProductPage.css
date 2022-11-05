@@ -41,6 +41,7 @@
   animation: transitionIn backwards .95s;
 }
 #tooltip{
+  width: 70%;
   position: absolute;
   font-size: 18px;
   top:50%;

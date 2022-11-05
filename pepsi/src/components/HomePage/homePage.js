@@ -9,9 +9,9 @@ import SectionCoke from './coke';
 import Schwepp from './schwepp';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function Homepage () {
-
+    {window.scroll(0,0)}
     return (
-        <div>
+        <div style={{width:"100%"}}>
             <Navbar></Navbar>
             {/* <section className='product-section'>
                 <div className='product-promot'></div>
