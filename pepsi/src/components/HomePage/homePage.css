@@ -22,10 +22,10 @@ section{
 }
 .product-section{
     background-image: url("../assets/homePage/background-desktop-section.png");
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    width: 100%;
+    background-position: center;
+    width: 100%; 
     height: 668px;
 }
 .product-promot{
@@ -33,8 +33,8 @@ section{
     width: 290px;
     height: 396px;
     position:absolute;
-    top: 27px;
-    left: 786px;
+    top: 12%;
+    left: calc((100%-290px)/2);
     z-index: 30;
     box-sizing: border-box;
     background-size: contain;

@@ -1,6 +1,6 @@
 .showProduct{
     padding-top:  10vw;
-    background-color: #f7f7f7;
+    background-color: #242230;
     border: 1px solid black;
 }
 .top{
@@ -8,7 +8,7 @@
     margin-left: 15vw;
     margin-right: 15vw;
     margin-bottom: 5vw;
-    background-color: white;
+    background-color: #9688ff;
     display: flex;
     height: 100px;
     justify-content: space-between;
