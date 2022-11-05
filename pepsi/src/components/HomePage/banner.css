@@ -11,6 +11,7 @@
     justify-content: space-evenly;
     background-image: url("../assets/homePage/Banner.png");
     background-size: cover;
+    background-position: center;
 }
 /* .logo{
     position: absolute;
