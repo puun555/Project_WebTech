@@ -10,7 +10,7 @@ const Schwepp = () =>{
     return(
         <section className = "schwepp-product">
             <div className='schwepp-header'>
-                <div>SPRAKLING WATER BEVERAGES</div>
+                {/* <div>SPRAKLING WATER BEVERAGES</div> */}
             </div>
             <div className='schwepp-item'>
                 <img src={schweppgreen} className='schwepp-can'></img>
@@ -21,7 +21,7 @@ const Schwepp = () =>{
                 <img src={schweppblack}></img>
             </div>
             <div className='schwepp-bottom'>
-                <h1>gear</h1>
+                {/* <h1>gear</h1> */}
             </div>
         </section>
     )
