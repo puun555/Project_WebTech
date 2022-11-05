@@ -28,20 +28,32 @@
 .navbar-left .navbar-item{
     border-radius: 30px;
     background-color: #9388ff;
-    color: white;
+    /* color: white; */
     /* border: 2px solid white; */
     padding: 5px 25px;
 }
-
+.navbar-left a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-right a{
+    color: white;
+    text-decoration: none;
+}
 .navbar-center{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
+.navbar-center a{
+    text-decoration: none;
+    color: white;
+}
 .navbar-item{
     margin-left: 20px;
     cursor: pointer;
+    /* text-decoration: none; */
 }
 /* .navbar-item-img:hover{
     animation: spin 0.4s linear alternate;
@@ -61,7 +73,7 @@
     right: 0%;
     position: relative;
 }
-#buy{
+/* #buy{
     color: white;
     text-decoration: none;
-}
+} */
