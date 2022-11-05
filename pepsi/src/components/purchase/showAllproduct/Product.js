@@ -18,7 +18,7 @@ const Product = (props)=>{
     // }
     return (
         <Container
-            style={{paddingLeft: '3vw', backgroundColor: '#9688ff' , borderRadius: '20px' ,width: '80%'}}>
+            style={{paddingLeft: '3vw', backgroundColor: '#9688ff' , borderRadius: '20px'}}>
              <Row >
                 <Col md={4} >
                     <ListProduct></ListProduct>
