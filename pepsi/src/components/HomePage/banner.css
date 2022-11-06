@@ -1,19 +1,19 @@
 @font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
 
-
 .banner-container{
     position: relative;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
-    /* display: flex; */
-    /* background-image: url("../assets/homePage/Desktop_Background.png"); */
     width: 100%;
     height: 100vh;
     background-color: #242230;
     color: white;
     background-position: 50% center;
     justify-content: space-evenly;
+    background-image: url("../assets/homePage/Banner.png");
+    background-size: cover;
+    background-position: center;
 }
-.logo{
+/* .logo{
     position: absolute;
     top: 20%;
     left: 10%;
@@ -28,4 +28,4 @@
     top: 50%;
     left: 50%;
     font-size: 100%;
-}
+} */
