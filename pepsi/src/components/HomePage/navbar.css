@@ -10,11 +10,10 @@
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
     text-transform:uppercase;
-    background-color: #242230 ;
+    /* background-color: #242230 ; */
     padding: 10px;
     color: white;
     z-index: 100;
@@ -24,7 +23,22 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    /* margin-right: 200px;  */
     
+}
+.navbar-right{
+    display: flex;
+}
+.navbar-item{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navbar-right .navbar-item{
+    border-radius: 30px;
+    /* background-color: #9388ff; */
+    padding: 5px 10px;
+    right: 0%;
+    position: relative;
 }
 .navbar-left .navbar-item{
     border-radius: 30px;
@@ -41,7 +55,7 @@
     color: white;
     text-decoration: none;
 }
-.navbar-center{
+/* .navbar-center{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -51,16 +65,7 @@
 .navbar-center a{
     text-decoration: none;
     color:white;
-}
-.navbar-center a{
-    text-decoration: none;
-    color: white;
-}
-.navbar-item{
-    margin-left: 20px;
-    cursor: pointer;
-    /* text-decoration: none; */
-}
+} */
 /* .navbar-item-img:hover{
     animation: spin 0.4s linear alternate;
 }
@@ -72,14 +77,46 @@
         transform: rotate(360deg);
     }
 } */
-.navbar-right .navbar-item{
-    border-radius: 30px;
-    background-color: #9388ff;
-    padding: 5px 25px;
-    right: 0%;
-    position: relative;
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
-/* #buy{
-    color: white;
-    text-decoration: none;
-} */
+.toggle-button .bar {
+    /* z-index: 101; */
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-right{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-item{
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+    .navbar-right.active{
+        display: flex;
+    }
+    .toggle-button .bar {
+        display: flex;
+    }
+  }

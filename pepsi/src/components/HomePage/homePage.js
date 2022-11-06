@@ -20,10 +20,10 @@ function Homepage () {
             </section> */}
             <Banner></Banner>
             <Schwepp></Schwepp>
-            <SectionCoke></SectionCoke>
+            {/* <SectionCoke></SectionCoke>
             <SectionVideo></SectionVideo>
             <Pourstep></Pourstep>
-            <Footer></Footer>
+            <Footer></Footer> */}
         </div>
     )
 }

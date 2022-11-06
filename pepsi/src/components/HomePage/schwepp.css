@@ -13,13 +13,14 @@
     margin-bottom: 5vw;
     max-width: 145px;
     min-height: 200px;
+    margin-left: 150px;
 }
 .schwepp-item{
     margin-top: 0;
     justify-content: center;
     align-items: center;
     display: flex;
-    gap: 3vw;
+    gap: 2vw;
 }
 .schwepp-can{
     margin-top: 3vw;
