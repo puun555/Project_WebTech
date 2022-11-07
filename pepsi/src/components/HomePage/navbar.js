@@ -4,7 +4,6 @@ import './navbar.css'
 const Navbar = () =>{
     const [isOpen,setOpen] = useState(false)
     return (
-        
         <div className="navbar">
             <div className="navbar-left">
                 <Link to="/">
@@ -13,21 +12,25 @@ const Navbar = () =>{
                     </div>
                 </Link>
             </div>
-            <a class="toggle-button" isOpen={isOpen} toggle={()=> setOpen(!isOpen)}>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
+            
             {/* <div className="navbar-center">
                 
                 <div className='navbar-item'>what's new</div>
                 <div className='navbar-item'>newsletter</div>
                 
             </div> */}
+            <input type="checkbox" id="checkbox"/>
+                <a className="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
             <div className="navbar-right">
-                <Link to="/product"><div className='navbar-item' >view product</div></Link>
-                <div className='navbar-item'>contact us</div>
-                <Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link>
+                <ul>
+                    <li><Link to="/product"><div className='navbar-item' >view product</div></Link></li>
+                    <li><Link to="/product"><div className='navbar-item'>contact us</div></Link></li>
+                    <li><Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link></li>
+                </ul>
             </div>
         </div>
     )

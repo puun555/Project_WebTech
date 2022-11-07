@@ -50,9 +50,9 @@ const ProductDetail = () =>{
                             <p style={{marginTop:"10px", borderTop:"1px solid black"}}>Amount per Serving</p>
                             <p style={{borderBottom:"5px solid black"}}>Calories {Item[page].nutrition_facts.calories}</p>
                             <p style={{textAlign:"right"}}>% Daily Value *</p>
-                            <p>Total fat {Item[page].nutrition_facts.daily_value.fat[0]}<span style={{float:"right"}}>{Item[page].nutrition_facts.daily_value.fat[1]}</span></p>
-                            <p>Sodium {Item[page].nutrition_facts.daily_value.sodium[0]}<span style={{float:"right"}}>{Item[page].nutrition_facts.daily_value.sodium[1]}</span></p>
-                            <p>Total Carbohydrate {Item[page].nutrition_facts.daily_value.carbohydrate[0]}<span style={{float:"right"}}>{Item[page].nutrition_facts.daily_value.carbohydrate[1]}</span></p>
+                            <p>Total fat {Item[page].nutrition_facts.daily_value.fat[0]}<span>{Item[page].nutrition_facts.daily_value.fat[1]}</span></p>
+                            <p>Sodium {Item[page].nutrition_facts.daily_value.sodium[0]}<span>{Item[page].nutrition_facts.daily_value.sodium[1]}</span></p>
+                            <p>Total Carbohydrate {Item[page].nutrition_facts.daily_value.carbohydrate[0]}<span>{Item[page].nutrition_facts.daily_value.carbohydrate[1]}</span></p>
                             <p>Sugars {Item[page].nutrition_facts.daily_value.sugars}</p>
                             <p style={{borderBottom:"5px solid black"}}>Protein {Item[page].nutrition_facts.daily_value.protein}</p>
                             <p>Not a significant source of other nutrients.</p>

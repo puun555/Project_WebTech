@@ -1,8 +1,11 @@
 @font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
-
-.body{
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.navbar-right ul{
     margin: 0;
-    
+    padding: 5px;
 }
 .navbar{
     width: 100%;
@@ -14,37 +17,27 @@
     /* flex-wrap: wrap; */
     text-transform:uppercase;
     background-color: #242230 ;
-    padding: 10px;
     color: white;
     z-index: 100;
 }
-.navbar-left{
+.navbar ul{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* margin-right: 200px;  */
-    
+    text-transform:uppercase;
 }
-.navbar-right{
-    display: flex;
-}
+
 .navbar-item{
     margin-left: 20px;
     cursor: pointer;
 }
+
 .navbar-right .navbar-item{
     border-radius: 30px;
-    /* background-color: #9388ff; */
-    padding: 5px 10px;
-    right: 0%;
-    position: relative;
+    padding: 5px 25px;
 }
 .navbar-left .navbar-item{
     border-radius: 30px;
     background-color: #9388ff;
-    /* color: white; */
-    /* border: 2px solid white; */
     padding: 5px 25px;
 }
 .navbar-left a{
@@ -79,7 +72,7 @@
 } */
 .toggle-button{
     position: absolute;
-    top: .75rem;
+    top: 1rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
@@ -87,7 +80,7 @@
     width: 30px;
     height: 21px;
 }
-.toggle-button .bar {
+.toggle-button .bar, #checkbox{
     /* z-index: 101; */
     height: 3px;
     width: 100%;
@@ -97,26 +90,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .toggle-button{
-        display: flex;
-    }
-    .navbar-right{
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-item{
-        text-align: center;
-        padding: .5rem 1rem;
-    }
-    .navbar-right.active{
-        display: flex;
-    }
-    .toggle-button .bar {
-        display: flex;
-    }
+    
   }
+
+  
