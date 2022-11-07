@@ -15,10 +15,9 @@ const CardProduct = (props)=>{
 
     return (
             <div className='card-product'  
-              
             >
                     <div className='card h-100 shadow'  >
-                        <img src={props.img} className="pepsiImg" ></img>
+                        <img src={props.img} alt={props.img}className="pepsiImg" ></img>
                         <div className='card-body'>
                             <h5 className='card-title'>{props.name}</h5>
                             <p>{props.price}</p>    

@@ -35,7 +35,7 @@ const FilterCanvas = (props)=>{
             setShowCount(true)
         }
         setCount(sum)
-    })  
+    },[sum])  
 
     return(
         <>

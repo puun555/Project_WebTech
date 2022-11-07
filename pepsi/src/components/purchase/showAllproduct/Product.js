@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListProduct from "./ListProduct";
 import CardProduct from "./CardProduct";
-import { useState } from "react";
 const Product = (props)=>{
 
     const reciveDataFormCardProduct = (data)=>{

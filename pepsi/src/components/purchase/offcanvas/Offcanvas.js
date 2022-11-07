@@ -1,8 +1,7 @@
-import Button from 'react-bootstrap/Button'
-import React, { useState } from 'react';
+
+import React from 'react';
 import './Offcanvas.css'
 import FilterCanvas from './FillterCanvas';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 const MyOffcanvas = (props)=>{
     const reciveData = (data)=>{
         props.getDelData(data)
