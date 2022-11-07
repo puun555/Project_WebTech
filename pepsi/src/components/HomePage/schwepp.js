@@ -16,8 +16,8 @@ const Schwepp = () =>{
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
-                    navigation
                     centeredSlides
+                    navigation
                     pagination={{clickable: true}}
                     scrollbar={{dragable: true}}
                     onSlideChange={() => console.log('slide change')}
