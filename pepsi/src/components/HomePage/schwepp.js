@@ -1,7 +1,8 @@
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css/bundle'
+// import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+// import 'swiper/css/bundle'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,6 +19,7 @@ const Schwepp = () =>{
                     spaceBetween={50}
                     slidesPerView={3}
                     navigation
+                    centeredSlides
                     pagination={{clickable: true}}
                     scrollbar={{dragable: true}}
                     onSlideChange={() => console.log('slide change')}
