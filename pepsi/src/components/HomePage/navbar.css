@@ -21,7 +21,6 @@
     z-index: 100;
 }
 .navbar ul{
-    display: flex;
     align-items: center;
     text-transform:uppercase;
 }
@@ -70,7 +69,7 @@
         transform: rotate(360deg);
     }
 } */
-.toggle-button{
+/* .toggle-button{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -81,14 +80,28 @@
     height: 21px;
 }
 .toggle-button .bar, #checkbox{
-    /* z-index: 101; */
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
     display: none;
+} */
+/* .burger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
 }
-
+.burger-in {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #eee;
+    border-radius: 10px;
+} */
 @media screen and (max-width: 768px) {
-    
+
 }

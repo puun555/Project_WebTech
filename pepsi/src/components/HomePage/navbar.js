@@ -1,8 +1,57 @@
-import React,{useState} from 'react';
-import {Link} from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import styled from 'styled-components';
 import './navbar.css'
-const Navbar = () =>{
-    const [isOpen,setOpen] = useState(false)
+const Navul = styled.ul`
+    display: flex;
+    @media (max-width: 768px) {
+        flex-flow: column nowrap;
+        background-color: magenta;
+        top: 0;
+        right: 0;
+        width: 300px;
+        padding-top: 3.5rem;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+        transition: transform 0.3s ease-in-out;
+    }
+`
+const StyledBurger = styled.div`
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: none;
+    z-index: 20;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+    }
+
+    div {
+        width: 2rem;
+        height: 0.25rem;
+        background-color: ${({ open }) => open ? '#fff' : '#eee'};
+        border-radius: 10px;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+
+        &:nth-child(1) {
+            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0deg)'};
+        }
+        &:nth-child(2) {
+            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+            opacity: ${({ open }) => open ? 0 : 1};
+        }
+        &:nth-child(3) {
+            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0deg)'};
+        }
+    }
+`
+const Navbar = () => {
+    const [open, setOpen] = useState(false)
     return (
         <div className="navbar">
             <div className="navbar-left">
@@ -12,25 +61,30 @@ const Navbar = () =>{
                     </div>
                 </Link>
             </div>
-            
+
             {/* <div className="navbar-center">
                 
                 <div className='navbar-item'>what's new</div>
                 <div className='navbar-item'>newsletter</div>
                 
             </div> */}
-            <input type="checkbox" id="checkbox"/>
-                <a className="toggle-button">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                </a>
-            <div className="navbar-right">
-                <ul>
+            {/* <input type="checkbox" id="checkbox"/>
+            <a className="toggle-button">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </a> */}
+            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                <div ></div>
+                <div ></div>
+                <div ></div>
+            </StyledBurger>
+            <div className="navbar-right" open={open}>
+                <Navul open={open}>
                     <li><Link to="/product"><div className='navbar-item' >view product</div></Link></li>
                     <li><Link to="/product"><div className='navbar-item'>contact us</div></Link></li>
                     <li><Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link></li>
-                </ul>
+                </Navul>
             </div>
         </div>
     )
