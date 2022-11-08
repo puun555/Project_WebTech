@@ -21,9 +21,9 @@ function Homepage () {
             <Banner></Banner>
             <Schwepp></Schwepp>
             {/* <SectionCoke></SectionCoke>
-            <SectionVideo></SectionVideo>
+            <SectionVideo></SectionVideo> */}
             <Pourstep></Pourstep>
-            <Footer></Footer> */}
+            {/* <Footer></Footer> */}
         </div>
     )
 }

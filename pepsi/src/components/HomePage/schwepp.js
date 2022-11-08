@@ -14,8 +14,8 @@ const Schwepp = () =>{
             </div>
             <div id="gallery" className='schwepp-item'>
                 <Swiper
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    spaceBetween={10}
+                    slidesPerView={5}
                     centeredSlides
                     navigation
                     pagination={{clickable: true}}
@@ -29,7 +29,7 @@ const Schwepp = () =>{
                     }}
                     breakpoints={{
                         0: {
-                            slidesPerView: 1,
+                            slidesPerView: 0,
                             spaceBetween: 5,
                         },
                         350: {
@@ -46,6 +46,10 @@ const Schwepp = () =>{
                         },
                         1080: {
                             slidesPerView: 3,
+                            spaceBetween: 5,
+                        },
+                        1440: {
+                            slidesPerView: 5,
                             spaceBetween: 5,
                         },
                       }}

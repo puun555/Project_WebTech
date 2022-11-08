@@ -21,6 +21,7 @@
     align-items: center;
     display: flex;
     gap: 2vw;
+    cursor: pointer;
 }
 .schwepp-can{
     margin-top: 3vw;
@@ -39,6 +40,7 @@
     justify-content: center;
   }
 .swiper-slide{
+    width: auto;
     display: flex;
     justify-content: center;
     transition: all 0.6s ease;
