@@ -117,10 +117,11 @@
     }
     .transitionsItem {
         margin-left: 150px;
-        font-size: 1.5em;
-        margin-top: 20px;
+        font-size: 2em;
+        /* margin-top: 20px; */
     }
     .main {
+        height: 400px;
         /* line-height: 150px; */
     }
 }
