@@ -21,9 +21,9 @@ const Navbar = () =>{
             </div> */}
             <input type="checkbox" id="checkbox"/>
                 <a className="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
                 </a>
             <div className="navbar-right">
                 <ul>

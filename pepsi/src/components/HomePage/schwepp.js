@@ -27,12 +27,38 @@ const Schwepp = () =>{
                         delay: 3000,
                         disableOnInteraction: false
                     }}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 5,
+                        },
+                        350: {
+                            slidesPerView: 1,
+                            spaceBetween: 5,
+                        },
+                        540: {
+                            slidesPerView: 1,
+                            spaceBetween: 5,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 5,
+                        },
+                        1080: {
+                            slidesPerView: 3,
+                            spaceBetween: 5,
+                        },
+                      }}
                 >
                     <SwiperSlide><img src="img_product\SPRITE WINTER SPICED CRANBERRY ZERO SUGAR.png" alt></img></SwiperSlide>
+                    <SwiperSlide><img src="img_product\SPRITE ZERO SUGAR.png"></img></SwiperSlide>
                     <SwiperSlide><img src="img_product\PEPSI ZERO SUGAR MANGO.png" alt></img></SwiperSlide>
                     <SwiperSlide><img src="img_product\DIET PEPSI CAFFEINE FREE.png" alt></img></SwiperSlide>
+                    <SwiperSlide><img src="img_product\PEPSI ZERO SUGAR WILD CHERRY.png"></img></SwiperSlide>
                     <SwiperSlide><img src="img_product\FANTA BERRY.png" alt></img></SwiperSlide>
+                    <SwiperSlide><img src="img_product\FANTA ORANGE.png"></img></SwiperSlide>
                     <SwiperSlide><img src="img_product\SCHWEPPES BITTER LEMON.png" alt></img></SwiperSlide>
+                    <SwiperSlide><img src="img_product\SCHWEPPES SODA WATER.png"></img></SwiperSlide>
                 </Swiper>
             </div>
             {/* <div id="gallery">
