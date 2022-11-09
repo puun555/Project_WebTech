@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button'
 import { useState ,useEffect} from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './FillterCanvas.css'
-const FilterCanvas = (props)=>{
+const FilterCanvas = (props)=>{ 
     const [showCount, setShowCount] = useState(false)
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -10,14 +10,17 @@ const FilterCanvas = (props)=>{
 
     const newData =(data)=>{
         props.reciveData(data)
+        console.log(data)
     
     }
     const delData = (data)=>{
         props.addData(data)
     }
+    /// คำนวนจำนวนสิ้นค้าทั้งหมด
     let  arCount = []
     let  arrCount = []
     let sum = 0
+    let sumPrice = 0
     arCount = props.newDataAdd.map(data =>
         data
       )
@@ -29,12 +32,26 @@ const FilterCanvas = (props)=>{
     for (let i = 0; i < arrCount.length; i+=1){
         sum += arrCount[i]
     }
+    /// คำนวนราคาสิ้นค้าทั้งหมด
+    let arrPrice = []
+
+    arrPrice = arCount.map(data =>
+        data.price
+
+    )
+    for (let i = 0; i < arrPrice.length; i+=1){
+        sumPrice += arrPrice[i]
+        console.log(arrPrice)
+        console.log(sumPrice)
+    }
+    const [price, setprice] = useState(0)
     const [count, setCount] = useState(0)
     useEffect(()=>{
         if(props.newDataAdd.length > 0){
             setShowCount(true)
         }
         setCount(sum)
+        setprice(sumPrice)
     },[sum])  
 
     return(
@@ -70,6 +87,7 @@ const FilterCanvas = (props)=>{
                 <Offcanvas show={show} onHide={handleClose} >
                     <Offcanvas.Header closeButton key={props.newDataAdd.id}>
                         <Offcanvas.Title>Your Items</Offcanvas.Title>
+                        <h5>ราคาสิ้นค้าทั้งหมด{price}</h5>
                         <button className='btn bg-primary' style={{marginLeft:'1vw', color:'white'}}>สั่งซื้อสิ้นค้า</button>
                     </Offcanvas.Header>
                     <Offcanvas.Body>

@@ -60,6 +60,10 @@ const ShowProduct = (props)=>{
                 setNewItem(item)
             }
     }, [])
+    const pricese = NewItems.map(data =>(
+        data.price
+    ))
+    console.log(pricese)
     return (
         <div className="showProduct">
             <div className='top'>
