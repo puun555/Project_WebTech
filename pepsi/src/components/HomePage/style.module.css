@@ -126,7 +126,22 @@
     }
 }
 @media screen and (max-width: 540px) {
-    
+    .fanta img {
+        width: 150px;
+    }
+    .container {
+        height: 600px;
+        flex-direction: column-reverse;
+    }
+    .transitionsItem {
+        margin-left: 0px;
+        font-size: 1.5em;
+        /* margin-top: 20px; */
+    }
+    .main {
+        height: 500px;
+        /* line-height: 150px; */
+    }
 }
 @media screen and (max-width: 350px) {
     

@@ -5,14 +5,16 @@ import './navbar.css'
 const Navul = styled.ul`
     display: flex;
     @media (max-width: 768px) {
+        position: fixed;
         flex-flow: column nowrap;
-        background-color: magenta;
-        top: 0;
+        background-color: #242230;
+        top: 50px;
         right: 0;
-        width: 300px;
+        width: 220px;
+        height: 100vh;
         padding-top: 3.5rem;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.0s ease-in-out;
     }
 `
 const StyledBurger = styled.div`
