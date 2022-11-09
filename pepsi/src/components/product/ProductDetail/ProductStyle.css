@@ -109,7 +109,7 @@
 }
 
 .previousPage{
-    position: fixed;
+    position: absolute;
     margin-top: 40%;
     left:25px;
     height: 23px;
@@ -125,7 +125,7 @@
 }
 
 .nextPage{
-    position: fixed;
+    position: absolute;
     margin-top: 40%;
     right:25px;
     height: 23px;
