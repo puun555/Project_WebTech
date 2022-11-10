@@ -5,7 +5,7 @@
 .product-container{
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   height: 100%;
   padding-top: 100px;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 .product-body{
   position: relative;
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content:center;
   margin-bottom: 150px;
@@ -35,6 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .5s;
 }
 
 .product-list img{
@@ -46,4 +47,7 @@
 .product-list strong{
   font-size: 1vw;
   padding: 10px 20px ;
+}
+.product-list:nth-child(1){
+  width: 60%;
 }
