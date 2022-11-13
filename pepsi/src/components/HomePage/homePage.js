@@ -6,7 +6,7 @@ import './homePage.css'
 import Pourstep from './pourstep.tsx';
 import SectionVideo from './video';
 import SectionCoke from './coke';
-import Schwepp from './schwepp';
+import Bestseller from './bestseller';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function Homepage () {
     {window.scroll(0,0)}
@@ -19,7 +19,7 @@ function Homepage () {
                 <div className='product-cherry'></div>
             </section> */}
             <Banner></Banner>
-            <Schwepp></Schwepp>
+            <Bestseller></Bestseller>
             {/* <SectionCoke></SectionCoke> */}
             {/* <SectionVideo></SectionVideo> */}
             {/* <Pourstep></Pourstep> */}

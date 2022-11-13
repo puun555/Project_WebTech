@@ -1,21 +1,21 @@
-.schwepp-product{
+.bestseller-product{
     width: 100%;
     background-position: top center;
     height: 700px;
     background-size: cover;
 }
-.schwepp-header{
+.bestseller-header{
     background-image: url('../assets/homePage/bubbles.png');
     width: 100%;
     height: 200px;
 }
-.schwepp-item img{
+.bestseller-item img{
     margin-bottom: 5vw;
     max-width: 145px;
     min-height: 200px;
     /* margin-left: 150px; */
 }
-.schwepp-item{
+.bestseller-item{
     margin-top: 0;
     justify-content: center;
     align-items: center;
@@ -23,11 +23,11 @@
     gap: 2vw;
     cursor: pointer;
 }
-.schwepp-can{
+.bestseller-can{
     margin-top: 3vw;
     height: 420px;
 }
-.schwepp-bottom{
+.bestseller-bottom{
     width: 100%;
     height: 300px;
 }

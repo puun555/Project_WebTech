@@ -4,15 +4,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import './schwepp.css'
+import './bestseller.css'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-const Schwepp = () =>{
+const Bestseller = () =>{
     return(
-        <section className = "schwepp-product">
-            <div className='schwepp-header'>
+        <section className = "bestseller-product">
+            <div className='bestseller-header'>
                 {/* <div>SPRAKLING WATER BEVERAGES</div> */}
             </div>
-            <div id="gallery" className='schwepp-item'>
+            <div id="gallery" className='bestseller-item'>
                 <Swiper
                     spaceBetween={10}
                     slidesPerView={5}
@@ -85,4 +85,4 @@ const Schwepp = () =>{
     )
 }
 
-export default Schwepp
+export default Bestseller
