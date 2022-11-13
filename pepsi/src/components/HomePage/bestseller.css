@@ -1,15 +1,15 @@
 .bestseller-product {
     width: 100%;
-    background-position: center center;
+    /* background-position: center center; */
     height: 700px;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
-.bestseller-header {
+/* .bestseller-header {
     background-image: url('../assets/homePage/bubbles.png');
     width: 100%;
     height: 200px;
-}
+} */
 
 /* .bestseller-item img {
     margin-bottom: 3vw;

@@ -2,11 +2,10 @@ import Navbar from './navbar';
 import React from 'react';
 import Banner from './banner';
 import Footer from './footer';
-import './homePage.css'
-import Pourstep from './pourstep.tsx';
-import SectionVideo from './video';
-import SectionCoke from './coke';
 import Bestseller from './bestseller';
+import New from './new';
+import Bestoffer from './bestoffer'
+import './homePage.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function Homepage () {
     {window.scroll(0,0)}
@@ -20,6 +19,8 @@ function Homepage () {
             </section> */}
             <Banner></Banner>
             <Bestseller></Bestseller>
+            <New></New>
+            <Bestoffer></Bestoffer>
             {/* <SectionCoke></SectionCoke> */}
             {/* <SectionVideo></SectionVideo> */}
             {/* <Pourstep></Pourstep> */}
