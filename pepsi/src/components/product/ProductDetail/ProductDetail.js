@@ -2,17 +2,18 @@ import Navbar from "../../HomePage/navbar"
 import "./ProductStyle.css"
 import { Link,useParams} from "react-router-dom"
 import Item from "../products.json"
-import React,{useState} from "react"
+import React from "react"
 const ProductDetail = () =>{
     let {page} = useParams();
     // eslint-disable-next-line
     const firstCond = (Number(page) == 0);
     // eslint-disable-next-line
     const secCond = (Number(page) == 38);
+    
     return(
             <div className="detail-body">
                 <div className="detail-background" style={{backgroundColor:Item[page].background_color}}></div>
-                <div className="product-navbar"><Navbar /></div>
+                <Navbar />
                 {firstCond ? (
                     <>
                         <Link className="previousPage" to={{
