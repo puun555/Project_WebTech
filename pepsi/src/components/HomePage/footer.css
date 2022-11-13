@@ -31,9 +31,11 @@
 }
 .footer-services:hover {
     color: #f86c2c;
+    cursor: pointer;
 }
 .hovercolor:hover {
     color: #f86c2c;
+    cursor: pointer;
 }
 .icon-hover {
     width: 40px;
