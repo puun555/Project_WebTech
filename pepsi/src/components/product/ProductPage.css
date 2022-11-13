@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .product-body{
   position: relative;
@@ -81,9 +81,20 @@
 
 .product-navbar{
   padding-bottom: 20px;
-  background: grey;
+  background: #005CB4;
 }
 .product-text a{
   text-decoration: none;
   color:black;
 }
+.product-item-body:hover .product-img{
+  animation:shackingIMG 2s linear infinite;
+}
+@keyframes shackingIMG {
+  0%{transform: rotate(0);transform: translatey(0px);}
+  25%{transform: rotate(-1deg);}
+  50%{transform: rotate(0deg);transform: translatey(-2px);}
+  75%{transform: rotate(1deg);}
+  100%{transform: rotate(0deg);transform: translatey(0px);}
+}
+

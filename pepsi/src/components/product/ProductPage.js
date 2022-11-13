@@ -31,6 +31,15 @@ const ProductPage = () =>{
     setProd(name);
     setImg(img);
     handleClick();
+    if(name === "PEPSI"){
+      document.getElementById("product-nav").style.background = "#005CB4";
+    }else if(name === "FANTA"){
+      document.getElementById("product-nav").style.background = "#F7941E";
+    }else if(name === "SCHWEPPES"){
+      document.getElementById("product-nav").style.background = "#F8CD24";
+    }else if(name === "SPRITE"){
+      document.getElementById("product-nav").style.background = "#008B47";
+    }
   }
   window.scroll(0,0);
   const [prods,setProd] = useState("PEPSI");
@@ -38,7 +47,7 @@ const ProductPage = () =>{
   return (
     <div style={{background:"#fff"}}>
           <Navbar />
-          <div className="product-navbar">
+          <div className="product-navbar" id="product-nav">
             <img src={PepsiIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("PEPSI",PEPSI)} className="product-icon p-active"/>
             <img src={FantaIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("FANTA",FANTA)} className="product-icon"/>
             <img src={SchweppesIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("SCHWEPPES",SCHWEPPES)} className="product-icon"/>
