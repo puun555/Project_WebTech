@@ -11,6 +11,7 @@ import SchweppesIcon from "./ProductDetail/img_products/Schweppes-Icon.png";
 import SpriteIcon from "./ProductDetail/img_products/Sprite-Icon.jpg";
 import "./ProductPage.css"
 import { useState,useEffect} from "react";
+import Footer from "../HomePage/footer";
 const ProductPage = () =>{
   let [opacity, setOpacity] = useState(0);
   let [shouldTransition, setShouldTransition] = useState(true);
@@ -47,7 +48,7 @@ const ProductPage = () =>{
   return (
     <div style={{background:"#fff"}}>
           <Navbar />
-          <div className="product-navbar" id="product-nav">
+          <div className="product-navbar" id="product-nav" style={{transition: shouldTransition ? "all 0.2s" : "",opacity:`${opacity}`}}>
             <img src={PepsiIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("PEPSI",PEPSI)} className="product-icon p-active"/>
             <img src={FantaIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("FANTA",FANTA)} className="product-icon"/>
             <img src={SchweppesIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("SCHWEPPES",SCHWEPPES)} className="product-icon"/>
@@ -65,6 +66,7 @@ const ProductPage = () =>{
 
             
           </div>
+          <Footer/>
     </div>
     
   )
