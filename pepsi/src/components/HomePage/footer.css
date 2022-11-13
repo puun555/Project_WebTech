@@ -20,7 +20,6 @@
     padding: 5px;
     margin-top: 10px;
     margin-left: 5px;
-    /* background-color: #f86c2c; */
     border-radius: 30px;
 }
 .footer-centerbottom {
@@ -29,4 +28,101 @@
 }
 .footer-services {
     margin-left: 10px;
+}
+.footer-services:hover {
+    color: #f86c2c;
+}
+.hovercolor:hover {
+    color: #f86c2c;
+}
+.icon-hover {
+    width: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 30px;
+}
+.youtube {
+    display: inline-block;
+    position: relative;
+}
+.youtube .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.youtube:hover .icon-hover {
+    display: inline;
+}
+.facebook {
+    display: inline-block;
+    position: relative;
+}
+.facebook .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.facebook:hover .icon-hover {
+    display: inline;
+}
+.twitter {
+    display: inline-block;
+    position: relative;
+}
+.twitter .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.twitter:hover .icon-hover {
+    display: inline;
+}
+.instagram {
+    display: inline-block;
+    position: relative;
+}
+.instagram .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.instagram:hover .icon-hover {
+    display: inline;
+}
+.discord {
+    display: inline-block;
+    position: relative;
+}
+.discord .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.discord:hover .icon-hover {
+    display: inline;
+}
+.tiktok {
+    display: inline-block;
+    position: relative;
+}
+.tiktok .icon-hover {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.tiktok:hover .icon-hover {
+    display: inline;
 }
