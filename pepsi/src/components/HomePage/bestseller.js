@@ -10,7 +10,7 @@ const Bestseller = () => {
     return (
         <section className="bestseller-product">
             <div className="bestseller-upper">
-                <div>BEST SELLER</div>
+                <div>BEST SELLERS</div>
             </div>
             {/* <div className='bestseller-header'></div> */}
             {/* <div id="gallery" className='bestseller-item'> */}
