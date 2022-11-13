@@ -27,7 +27,8 @@
     cursor: pointer;
 } */
 .item-img {
-    max-width: 150px;
+    max-width: 145px;
+    /* min-height: 200px; */
 }
 .item-box {
     justify-content: center;
@@ -80,7 +81,7 @@
     height: 100%;
     width: auto;
     display: flex;
-    margin-top: 100px;
+    margin-top: 90px;
     justify-content: center;
     transition: all 0.6s ease;
     min-width: 200px !important;
