@@ -7,8 +7,8 @@ const Navul = styled.ul`
     @media (max-width: 768px) {
         position: fixed;
         flex-flow: column nowrap;
-        background-color: #242230;
-        top: 50px;
+        background-color: #1e1e1e;
+        top: 55px;
         right: 0;
         width: 220px;
         height: 100vh;
