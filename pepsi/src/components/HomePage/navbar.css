@@ -60,6 +60,9 @@
         border: 0px;
         padding: 5px 25px;
     }
+    .navbar-right .navbar-item:hover{
+        background-color: #1e1e1e;
+    }
 }
 
 /* .navbar-center{
