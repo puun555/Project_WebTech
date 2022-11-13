@@ -8,7 +8,6 @@ const Product = ({name,img_product,background_color,id,page}) =>{
             </div>
             <div className="product-text">
                 <p>{name}</p>
-                
                 <Link to={{
                     pathname : `/product/${id-1}`,
                 }}>Read More</Link>

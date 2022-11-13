@@ -10,11 +10,27 @@ import FantaIcon from "./ProductDetail/img_products/Fanta-Icon.png";
 import SchweppesIcon from "./ProductDetail/img_products/Schweppes-Icon.png";
 import SpriteIcon from "./ProductDetail/img_products/Sprite-Icon.jpg";
 import "./ProductPage.css"
-import { useState } from "react";
+import { useState,useEffect} from "react";
 const ProductPage = () =>{
+  let [opacity, setOpacity] = useState(0);
+  let [shouldTransition, setShouldTransition] = useState(true);
+
+  function handleClick() {
+    setShouldTransition(false);
+    setOpacity(0);
+  }
+
+  useEffect(() => {
+    if (opacity === 0) {
+      setShouldTransition(true);
+      setOpacity(1);
+    }
+  }, [opacity]);
+
   const wraperFunction = (name,img) =>{
     setProd(name);
     setImg(img);
+    handleClick();
   }
   window.scroll(0,0);
   const [prods,setProd] = useState("PEPSI");
@@ -23,12 +39,12 @@ const ProductPage = () =>{
     <div style={{background:"#fff"}}>
           <Navbar />
           <div className="product-navbar">
-            <img src={PepsiIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("PEPSI",PEPSI)} className="product-icon"/>
-            <img src={FantaIcon} style={{width:"6%"}} alt="" onClick={() => wraperFunction("FANTA",FANTA)} className="product-icon"/>
-            <img src={SchweppesIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("SCHWEPPES",SCHWEPPES)} className="product-icon"/>
-            <img src={SpriteIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("SPRITE",SPRITE)} className="product-icon"/>
+            <img src={PepsiIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("PEPSI",PEPSI)} className="product-icon p-active"/>
+            <img src={FantaIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("FANTA",FANTA)} className="product-icon"/>
+            <img src={SchweppesIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("SCHWEPPES",SCHWEPPES)} className="product-icon"/>
+            <img src={SpriteIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("SPRITE",SPRITE)} className="product-icon"/>
           </div>
-          <div className="product-container">
+          <div className="product-container" style={{transition: shouldTransition ? "all 0.5s" : "",opacity:`${opacity}`}}>
             <div className="product-header" >
               <img src={img} style={{width:"20%"}} alt=""/>
             </div>
