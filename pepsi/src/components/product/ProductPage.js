@@ -48,7 +48,7 @@ const ProductPage = () =>{
   return (
     <div style={{background:"#fff"}}>
           <Navbar />
-          <div className="product-navbar" id="product-nav" style={{transition: shouldTransition ? "all 0.2s" : "",opacity:`${opacity}`}}>
+          <div className="product-navbar" id="product-nav">
             <img src={PepsiIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("PEPSI",PEPSI)} className="product-icon p-active"/>
             <img src={FantaIcon} style={{width:"5%"}} alt="" onClick={() => wraperFunction("FANTA",FANTA)} className="product-icon"/>
             <img src={SchweppesIcon} style={{width:"4%"}} alt="" onClick={() => wraperFunction("SCHWEPPES",SCHWEPPES)} className="product-icon"/>
