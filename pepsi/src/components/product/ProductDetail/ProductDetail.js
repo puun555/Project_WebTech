@@ -2,7 +2,7 @@ import Navbar from "../../HomePage/navbar"
 import "./ProductStyle.css"
 import { Link,useParams} from "react-router-dom"
 import Item from "../products.json"
-import {React,useState} from "react"
+import {React,useState,useEffect} from "react"
 const ProductDetail = () =>{
     let {page} = useParams();
     const [isHover, setIsHover] = useState(false);
@@ -18,41 +18,55 @@ const ProductDetail = () =>{
         setIsHover(true);
      };
   
-     const handleMouseLeave = () => {
-        setIsHover(false);
-     };
+    const handleMouseLeave = () => {
+    setIsHover(false);
+    };
+    let [translate, setTranslate] = useState(0);
+    let [shouldTransition, setShouldTransition] = useState(true);
+
+    function handleClick() {
+        setShouldTransition(false);
+        setTranslate(0);
+    }
+
+    useEffect(() => {
+        if (translate === 0) {
+        setShouldTransition(true);
+        setTranslate(1);
+        }
+    }, [translate]);
     return(
-            <div className="detail-body">
+            <div className="detail-body" >
                 <div className="detail-background" style={{backgroundColor:Item[page].background_color}}></div>
                 <Navbar />
                 {firstCond ? (
                     <>
                         <Link className="previousPage" to={{
                         pathname : `/product/${parseInt(page)+38}`,
-                        }}>
+                        }} onClick={handleClick}>
                         </Link>
                     </>
                 ):(<>
                         <Link className="previousPage" to={{
                         pathname : `/product/${parseInt(page)-1}`,
-                        }}>
+                        }} onClick={handleClick}>
                         </Link>
                 </>)}
                 {secCond ?(
                     <>
                         <Link className="nextPage" to={{
                         pathname : `/product/${parseInt(page)-38}`,
-                        }}>
+                        }} onClick={handleClick}>
                         </Link>
                     </>
                 ):(<>
                         <Link className="nextPage" to={{
                         pathname : `/product/${parseInt(page)+1}`,
-                        }}>
+                        }} onClick={handleClick}>
                         </Link>
                 </>)}
                     
-                <div className="detail-container">
+                <div className="detail-container" style={{transition: shouldTransition ? "all 0.75s" : "",opacity: `${translate}`}}>
                     <div className="detail-left">
                         <h1>{Item[page].name}</h1>
                         <h4>NUTRITION FACTS</h4>
