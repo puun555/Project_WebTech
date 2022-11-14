@@ -1,111 +1,93 @@
 
 .detail-body{
-    height: 100%;
+    position: relative; 
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    
 }
-.detail-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    animation:objectAnimation 1.3s .5s backwards;
+.detail-body::before{
+    content: "";
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/393/892/original/water-splash-slow-motion-with-droplets-on-black-background-free-video.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+    animation:backgroundAnimation .8s;
 }
 .detail-background{
     height: 100%;
     width: 100%;
     z-index: -1;
     position: absolute;
+    background-size: cover;
     animation:backgroundAnimation .8s;
 }
-
 @keyframes  backgroundAnimation{
-    0%{transform: translateX(-100vw);}
-    100%{transform: translateX(0vw);}
+    0%{transform: translateY(-100vw);opacity: 0;}
+    100%{transform: translateY(0vw);opacity: 1;}
 }
-
-@keyframes objectAnimation{
-    0%{transform: translateX(-100vw);}
-    70%{transform: translateX(5px);}
-    100%{transform: translateX(0vw);}
-}
-.detail-box{
+.detail-container{
+    padding:240px 0px;
     position:relative;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    color: white;
     justify-content: center;
-    align-items: center;
-    padding:10px;
+    animation:backgroundAnimation 1s;
 }
-.detail-box , .detail-container img{
-    margin-top: 15vw;
+.detail-container .detail-left{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
 }
-
-.detail-container img{
-    width:250px;
+.detail-container .detail-left h1{
+    font-size: 72px;
 }
-.inside-box{
-    
-    margin-top:.6vw;
-    border-top: 1px solid black;
+.detail-container .detail-item-box{
+    margin: 20px 10px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
-}
-
-.inside-box h1,.inside-box h2,.inside-box h3,.inside-box p{
-    margin:0;
-    padding:0;
-    width: 100%;
-    
-}
-
-.inside-box h2{
-    font-weight: 900;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding:8px 20px;
-    white-space: break-spaces;
-}
-
-.inside-box h3{
-    color:black;
-    font-weight: 900;
-    padding:15px 12px 15px;
-    border-bottom: 10px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-.inside-box p{
-    font-size: 16px;
-    font-weight: 500;
-    padding:1px 12px 1px;
-    color:black;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-.detail-box .navbar-right a{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-weight: bolder;
-    color:rgb(0, 0, 0);
-    overflow: visible;
-}
-.detail-box .navbar-right .navbar-item{
-    margin-top: 25px;
-    background: white;
+    justify-content:center;
+    background: rgba(255, 255, 255, 0.301);
     width: 150px;
+    height: 150px;
+}
+.detail-container .detail-item-box:hover{
+    background: rgba(255, 255, 255, 0.397);
+}
+.detail-item-box{
     text-align: center;
-    z-index: 99;
+    line-height: 15px;
+}
+.detail-item-box p{
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+}
+.detail-left-footer {
+    margin: 20px 0 0 0;
+}
+.detail-left-footer p{
+    margin: 0;
+}
+.detail-right{
+    margin-left: 20px;
+}
+.detail-left .detail-navbar{
+    text-decoration: none;
+    padding: 7px 0;
+    margin: 40px 0;
+    width: 250px;
+    border-radius: 50px;
+    text-align: center;
+}
+.detail-left .detail-navbar:hover{
+    background: white;
 }
 
 .previousPage{
@@ -143,73 +125,4 @@
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-blend-mode:saturation;
     transform: scale(1.2);
-}
-.inside-box span{
-    float:right;
-}
-
-@media screen and (max-width:900px) {
-    .inside-box span{
-        float:right;
-    }
-    .detail-container{
-        flex-direction: column;
-    }
-    .detail-background{
-        height: 150%;
-    }
-    .detail-img{
-        order:1;
-    }
-    .detail-container img{
-        width:200px;
-    }
-    .detail-box{
-        top:-30px;
-        order:2;
-    }
-    .previousPage{
-        margin-top: 70%;
-    }
-    .nextPage{
-        margin-top: 70%;
-    }
-    span{
-        position: relative;
-        right: 0;
-    }
-}
-@media screen and (max-width:700px) {
-    .detail-container{
-        flex-direction: column;
-    }
-    .detail-background{
-        height: 130%;
-    }
-    .detail-container img{
-        width:170px;
-    }
-}
-@media screen and (max-width:500px) {
-    .detail-container{
-        flex-direction: column;
-    }
-    .detail-background{
-        height: 120%;
-    }
-    .detail-container img{
-        width:140px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .detail-container{
-        flex-direction: column;
-    }
-    .detail-background{
-        height: 140%;
-    }
-    .detail-container img{
-        width:140px;
-    }
 }

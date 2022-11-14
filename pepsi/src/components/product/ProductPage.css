@@ -10,6 +10,7 @@
   padding-top: 20px;
   justify-content: center;
   align-items: center;
+  background: rgb(255, 255, 255);
 }
 .product-header{
   position: relative;
@@ -49,6 +50,7 @@
 .product-text{
   margin-top: 20px;
   text-align: left;
+  color:rgb(0, 0, 0);
 }
 .product-text p{
   width: 100%;
@@ -85,7 +87,7 @@
 }
 .product-text a{
   text-decoration: none;
-  color:black;
+  color:rgb(0, 0, 0);
 }
 .product-item-body:hover .product-img{
   animation:shackingIMG 2s linear infinite;
