@@ -7,6 +7,7 @@ import Cart from './Cart';
 import './Mainpage.scss'
 import items from './products.json'
 import { useState , useEffect} from 'react'
+import Navbar from "../HomePage/navbar";
 const MainPage = (props)=>{
     const [NewItems, setNewItem ] = useState([])
     const [searchText, setSeacrhText] = useState('')
@@ -69,30 +70,34 @@ const MainPage = (props)=>{
     
     
     return(
+        <>
+        <Navbar />
         <Container >
             <div className='top-mainpage'>
-                <div className='lef-mainpage'>
-                    <a>All Product</a>
-                    <h1>SHOP: DRINKING</h1>
-                    <a>30 PRODUCT</a>
-                </div>
-                <div className='right-mainpage'>
-                    <div className='search-bar'>
-                        <form  role="search">
-                            <label for="search">Search for stuff</label>
-                            <input 
-                                id="search" 
-                                type="search" 
-                                placeholder="Search..." 
-                                autoFocus required 
-                                value={searchText}
-                                onChange={(event)=>{setSeacrhText(event.target.value)}}
-                                 />
-                            <button>Go</button>  
-                        </form>
-                    </div>  
-                    <Cart data={NewItems} delData={DelDataFormCart} count={countItems} addData={GetNewDataFromShowItem}></Cart>
+                <div className='mainpage-container'>
+                    <div className='lef-mainpage'>
+                        <a>All Product</a>
+                        <h1>SHOP: DRINKING</h1>
+                        <a>30 PRODUCT</a>
+                    </div>
+                    <div className='right-mainpage'>
+                        <div className='search-bar'>
+                            <form  role="search">
+                                <label for="search">Search for stuff</label>
+                                <input 
+                                    id="search" 
+                                    type="search" 
+                                    placeholder="Search..." 
+                                    autoFocus required 
+                                    value={searchText}
+                                    onChange={(event)=>{setSeacrhText(event.target.value)}}
+                                    />
+                                <button>Go</button>  
+                            </form>
+                        </div>  
+                        <Cart data={NewItems} delData={DelDataFormCart} count={countItems} addData={GetNewDataFromShowItem}></Cart>
 
+                    </div>
                 </div>
             </div>
             <Row xs={0}>
@@ -100,6 +105,7 @@ const MainPage = (props)=>{
                 <Col md={9}><ShowItem data={SearchedItems} getData={GetNewDataFromShowItem} ></ShowItem></Col>
             </Row>
         </Container>
+        </>
     )
 }
 export default MainPage 
