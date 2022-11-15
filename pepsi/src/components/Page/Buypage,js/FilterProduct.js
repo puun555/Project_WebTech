@@ -1,6 +1,7 @@
 import './FilterProduct.css'
 import Container from 'react-bootstrap/esm/Container'
 const FilterProduct = (props)=>{
+
     const sendFilterData = (data) =>{
     
         props.getFilter(data)

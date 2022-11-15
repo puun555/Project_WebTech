@@ -8,10 +8,15 @@ import './Mainpage.scss'
 import items from './products.json'
 import { useState , useEffect} from 'react'
 const MainPage = (props)=>{
+    const [NewItems, setNewItem ] = useState([])
+    const [searchText, setSeacrhText] = useState('')
     const [FilteredItems,  setFilteredItems] = useState(items)
+    const [countItems, setCountItems] = useState(0)
+
+    //-----------------------------------------------------------filterProduct
     const getFilterText = (data) =>{
         const BigText = data.toUpperCase()
-        if(BigText == 'ALL'){
+        if(BigText === 'ALL'){
             setFilteredItems(items)
         }
         const filterData =items.filter((dummy)=>{
@@ -21,6 +26,47 @@ const MainPage = (props)=>{
             setFilteredItems(filterData)
         }
     }
+    const SearchedItems = FilteredItems.filter((name)=>{
+        return name.name.includes(searchText.toUpperCase())
+    })
+    //=--------------------------------------------------------------------------------
+    //======================================================AddItem===============================
+    const GetNewDataFromShowItem = (event) =>{
+        setCountItems(countItems + 1)
+        setNewItem(preitem  =>{
+            if(preitem.find(item =>item.id === event.id) == null){
+             return [...preitem, event]
+               }else{
+                  return preitem.map(item =>{
+                     if(item.id === event.id){
+                         return {...item, count: item.count+1, price: item.price + event.newPrice}
+                     }else{
+                         return item
+                     }
+                  })
+            }
+           })
+
+    }
+    const DelDataFormCart = (data) =>{
+        setCountItems(countItems - 1)
+        console.log(data)
+        setNewItem(preitem  =>{
+            if(preitem.find(item =>item.id === data.id)?.count === 1){
+            return preitem.filter(item => item.id != data.id)
+            }else{
+                return preitem.map(item =>{
+                    if(item.id === data.id){
+                        return {...item, count: item.count-1 , price: item.price - item.newPrice}
+                    }else{
+                        return  item
+                    }
+                })
+            }
+        })
+    
+    }
+    
     
     return(
         <Container >
@@ -34,17 +80,24 @@ const MainPage = (props)=>{
                     <div className='search-bar'>
                         <form  role="search">
                             <label for="search">Search for stuff</label>
-                            <input id="search" type="search" placeholder="Search..." autofocus required />
+                            <input 
+                                id="search" 
+                                type="search" 
+                                placeholder="Search..." 
+                                autoFocus required 
+                                value={searchText}
+                                onChange={(event)=>{setSeacrhText(event.target.value)}}
+                                 />
                             <button>Go</button>  
                         </form>
                     </div>  
-                    <Cart></Cart>
+                    <Cart data={NewItems} delData={DelDataFormCart} count={countItems} addData={GetNewDataFromShowItem}></Cart>
 
                 </div>
             </div>
             <Row xs={0}>
                 <Col md={3} ><FilterProduct getFilter={getFilterText}></FilterProduct></Col>
-                <Col md={9}><ShowItem data={FilteredItems}></ShowItem></Col>
+                <Col md={9}><ShowItem data={SearchedItems} getData={GetNewDataFromShowItem} ></ShowItem></Col>
             </Row>
         </Container>
     )

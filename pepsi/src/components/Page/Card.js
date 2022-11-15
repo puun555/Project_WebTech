@@ -1,7 +1,11 @@
 import './Card.css'
 import MyVerticallyCenteredModal from './ModalShow';
 import { useState } from 'react';
+
 const Cardproduct= (props) =>{
+     const RecievAddData = (data) =>{
+        props.getData(data)
+     }
     const [modalShow, setModalShow] = useState(false);
     return (
         <div className = "cardItem">
@@ -17,6 +21,7 @@ const Cardproduct= (props) =>{
                 items={props.datas}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
+                ReData={RecievAddData}
             >
             </MyVerticallyCenteredModal>
         </div>
