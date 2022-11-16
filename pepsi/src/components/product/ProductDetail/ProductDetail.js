@@ -4,6 +4,7 @@ import { Link,useParams} from "react-router-dom"
 import Item from "../products.json"
 import {React,useState,useEffect} from "react"
 const ProductDetail = () =>{
+    window.scroll(0,0);
     let {page} = useParams();
     const [isHover, setIsHover] = useState(false);
     // eslint-disable-next-line

@@ -1,29 +1,66 @@
 @font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
 
 .banner-container{
-    position: relative;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     width: 100%;
     height: 100vh;
-    /* color: white; */
-    justify-content: space-evenly;
-    /* background-image: url("../assets/homePage/Banner.png"); */
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    /* background-attachment: fixed; */
+    position: relative;
 }
 .left-container{
     background-color: #f86c2c;
     width: 50%;
     height: 100%;
     float: left;
-    /* position: relative; */
+    position: relative;
 }
 .right-container{
     background-color: white;
     width: 50%;
     height: 100%;
     float: left;
-    /* position: relative; */
+    position: relative;
+}
+.top-quote{
+    color: white;
+    position: relative;
+    top: 6.5%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+}
+.mid-quote{
+    color: white;
+    position: relative;
+    top: 26vh;
+    width: 100%;
+    text-align: center;
+    font-size: 10vh;
+}
+.bot-quote{
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+    padding: 1%;
+}
+.left-quote{
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 3vh;
+}
+.center-quote{
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+}
+.right-quote{
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    font-size: 3vh;
 }

@@ -7,6 +7,7 @@ import New from './new';
 import Bestoffer from './bestoffer'
 import './homePage.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Featured from './featured';
 function Homepage () {
     {window.scroll(0,0)}
     return (
@@ -18,6 +19,7 @@ function Homepage () {
                 <div className='product-cherry'></div>
             </section> */}
             <Banner></Banner>
+            <Featured></Featured>
             <Bestseller></Bestseller>
             <Bestoffer></Bestoffer>
             <New></New>
