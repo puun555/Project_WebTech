@@ -73,8 +73,7 @@ const MainPage = (props)=>{
         <>
         <Navbar />
         <Container >
-            <div className='top-mainpage'>
-                <div className='mainpage-container'>
+            <div className='mainpage-container'>
                     <div className='lef-mainpage'>
                         <a>All Product</a>
                         <h1>SHOP: DRINKING</h1>
@@ -82,7 +81,7 @@ const MainPage = (props)=>{
                     </div>
                     <div className='right-mainpage'>
                         <div className='search-bar'>
-                            <form  role="search">
+                            <form  className="form"role="search">
                                 <label for="search">Search for stuff</label>
                                 <input 
                                     id="search" 
@@ -99,10 +98,10 @@ const MainPage = (props)=>{
 
                     </div>
                 </div>
-            </div>
+         
             <Row xs={0}>
-                <Col md={3} ><FilterProduct getFilter={getFilterText}></FilterProduct></Col>
-                <Col md={9}><ShowItem data={SearchedItems} getData={GetNewDataFromShowItem} ></ShowItem></Col>
+                <Col md={3}  ><FilterProduct getFilter={getFilterText}></FilterProduct></Col>
+                <Col md={8}><ShowItem data={SearchedItems} getData={GetNewDataFromShowItem} ></ShowItem></Col>
             </Row>
         </Container>
         </>

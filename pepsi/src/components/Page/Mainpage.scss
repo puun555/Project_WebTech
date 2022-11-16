@@ -1,15 +1,15 @@
-.top-mainpage{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-    width: 100%;
-    border-bottom: 1px solid black;
-    margin-bottom: 2vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-bottom: 2vw;
-  
+
+.mainpage-container{
+  display: flex;
+  align-items: center;
+  padding-top: 5vw;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 2vw;
+  justify-content: space-between;
 }
 //Vars 
 :root {
@@ -27,7 +27,7 @@
 // Setup
 
 // Main styles
-form {
+.form {
   position: relative;
   width: 20rem;
   background: var(--color-brand);
@@ -87,10 +87,4 @@ label {
     justify-content: space-between;
     display: flex;
     align-items: center;
-}
-.mainpage-container {
-
-    display: flex;
-    justify-content:  space-between;
-    margin-top: 6vw;
 }

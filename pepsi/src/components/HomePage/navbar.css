@@ -24,8 +24,9 @@
 }
 
 .navbar-item{
-    margin-left: 20px;
+    margin-left: 1.5vw;
     cursor: pointer;
+
 }
 
 .navbar-right .navbar-item{
@@ -62,7 +63,13 @@
         background-color: #1e1e1e;
     }
 }
-
+.uiPeple{
+    cursor: pointer;
+}
+.uiPeple:hover{
+    border-radius: 20px;
+    border: 2px solid white;
+}
 /* .navbar-center{
     display: flex;
     align-items: center;
