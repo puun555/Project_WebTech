@@ -84,9 +84,9 @@ const Navbar = () => {
             </StyledBurger>
             <div className="navbar-right" open={open}>
                 <Navul open={open}>
-                    <li><Link to="/product"><div className='navbar-item' >view product</div></Link></li>
-                    <li><Link to="/product"><div className='navbar-item'>contact us</div></Link></li>
-                    <li><Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link></li>
+                    <li><Link to="/product"><div className='navbar-item gradient' >view product</div></Link></li>
+                    <li><Link to="/product"><div className='navbar-item gradient'>contact us</div></Link></li>
+                    <li><Link to="/purches"><a><div className='navbar-item gradient' id='buy'>buy products</div></a></Link></li>
                     <li><Link to="/login"><a><CiUser className='uiPeple'
                         style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiUser></a></Link></li>

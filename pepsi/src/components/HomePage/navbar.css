@@ -28,11 +28,49 @@
     cursor: pointer;
 
 }
-
+.navbar-right div {
+	border: 0;
+	border-radius: 30px;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+    cursor: pointer;
+}
+.navbar-right div:before {
+    content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0;
+}
+.navbar-right div.gradient:hover {
+    color: white;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.6);
+	transform: translateY(-2px);
+}
 .navbar-right .navbar-item{
     border-radius: 30px;
     border: 2px solid #f86c2c;
     padding: 5px 25px;
+    -webkit-transform: perspective(1px) translateZ(0);
+	background: #1e1e1e;
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	transition-timing-function: cubic-bezier(.86, .01, .15, .99);
+	transition-duration: 0.4s;
+}
+.navbar-right .navbar-item:before {
+	background: linear-gradient(to bottom, #FF8348 10%, #E26228 90%);
+	transform: scaleY(0);
+	transform-origin: 0% 0%;
+	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+
+.navbar-right .navbar-item:hover:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
 }
 .navbar-right .navbar-item:hover{
     background-color: rgba(245, 116, 14, 0.9);
