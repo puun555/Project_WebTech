@@ -1,5 +1,4 @@
 import './banner.css'
-import logo from '../assets/homePage/logo.png'
 const Banner = ()=>{
     return(
         <div className='banner-container'>
