@@ -12,9 +12,7 @@
     position: fixed;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     text-transform:uppercase;
     background-color: #1e1e1e ;
     color: white;
