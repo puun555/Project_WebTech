@@ -86,6 +86,7 @@ const Navbar = () => {
                     <li><Link to="/product"><div className='navbar-item' >view product</div></Link></li>
                     <li><Link to="/product"><div className='navbar-item'>contact us</div></Link></li>
                     <li><Link to="/purches"><a><div className='navbar-item' id='buy'>buy products</div></a></Link></li>
+                    <li><div className='navbar-item'>Log in</div></li>
                 </Navul>
             </div>
         </div>
