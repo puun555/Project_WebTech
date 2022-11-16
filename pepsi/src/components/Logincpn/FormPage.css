@@ -1,0 +1,95 @@
+.box{
+    width: 410px;
+    height: 500px;
+    background: url('/public/svghh.svg');
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px gray;
+    scale: 1.25;
+    margin-top: 50px;
+}
+
+.form-page h1 {
+    margin-bottom: 40px;
+    font-size: 33px;
+
+}
+
+.form-page h1 span {
+    background: linear-gradient(to right, #BB3B00 , #F86C2C);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+.form-page * {
+    margin: 15px 50px;
+    padding: 3px;
+}
+
+.form-page input[type=text], input[type=password] {
+    transition: width 0.4s ease-in-out;
+}
+.form-page input:focus {
+    width: 300px;
+}
+
+
+
+.form-page input {
+    width: 250px;
+    background: transparent ;
+    border: none;
+    border-bottom: solid 3px #F86C2C;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.form-page button {
+    margin-top: 50px;
+    width: 300px;
+    background: linear-gradient(to right, #BB3B00 , #F86C2C) ;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0.5px 0.5px 2px 0.3px black;
+}
+
+@media only screen and (max-width: 500px) {
+    .box {
+        width: 250px;
+        height: 350px;
+        background-size: inherit ;
+        scale: 1.1;
+        margin-top: 0;
+    }
+
+    .form-page input {
+        width: 130px;
+    }
+    .form-page input:focus {
+        width: 150px;
+    }
+
+    .form-page button {
+        
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    .form-page * {
+        margin: 5px 15px;
+        padding: 3px;
+    }
+
+    .form-page h1 {
+        margin-bottom: 20px;
+        font-size: 33px;
+    
+    }
+}
+
+
+
+/* #BB3B00  #F86C2C*/
