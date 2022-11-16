@@ -32,6 +32,13 @@ const Banner = ()=>{
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     loop={true}
+                    style={{
+                        "--swiper-pagination-color": "#f86c2c",
+                        "--swiper-pagination-bullet-inactive-color": "white",
+                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                        "--swiper-pagination-bullet-size": "16px",
+                        "--swiper-pagination-bullet-horizontal-gap": "6px"
+                      }}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false
@@ -60,20 +67,26 @@ const Banner = ()=>{
                 >
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product\SPRITE WINTER SPICED CRANBERRY ZERO SUGAR.png" alt></img>
-                        <h2 className='b-item-text'>SPRITE WINTER SPICED CRANBERRY ZERO SUGAR</h2>
+                        <img className='b-item-img' src="img_product\PEPSI.png" alt></img>
+                        <h2 className='b-item-text'>PEPSI</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product\SPRITE ZERO SUGAR.png"></img>
-                        <h2 className='b-item-text'>SPRITE ZERO SUGAR</h2>
+                        <img className='b-item-img' src="img_product\FANTA ORANGE.png"></img>
+                        <h2 className='b-item-text'>FANTA ORANGE</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product\PEPSI ZERO SUGAR MANGO.png" alt></img>
-                        <h2 className='b-item-text'>PEPSI ZERO SUGAR MANGO</h2>
+                        <img className='b-item-img' src="img_product\SCHWEPPES TONIC WATER.png" alt></img>
+                        <h2 className='b-item-text'>SCHWEPPES TONIC WATER</h2>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='b-item-box'>
+                        <img className='b-item-img' src="img_product\SPRITE.png" alt></img>
+                        <h2 className='b-item-text'>SPRITE</h2>
                     </div>
                 </SwiperSlide>
             </Swiper>
