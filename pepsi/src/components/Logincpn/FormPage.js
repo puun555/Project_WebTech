@@ -19,7 +19,7 @@ const FormPage = () => {
     }
 
         return (
-            <div className='box'>
+            <div className='box-login'>
                 <form className='form-page'>
                     <h1>Who wants <span>Drinks?</span></h1>
                     <input className='un' type='text' placeholder='Username' onChange={handleInput} /><br/>

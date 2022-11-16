@@ -1,4 +1,4 @@
-.box{
+.box-login {
     width: 410px;
     height: 500px;
     background: url('/public/svghh.svg');
@@ -13,7 +13,6 @@
     font-size: 33px;
 
 }
-
 .form-page h1 span {
     background: linear-gradient(to right, #BB3B00 , #F86C2C);
     -webkit-text-fill-color: transparent;
