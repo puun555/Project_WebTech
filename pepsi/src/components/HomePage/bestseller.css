@@ -1,6 +1,6 @@
 .bestseller-product {
     width: 100%;
-    height: 700px;
+    height: 750px;
 }
 
 .item-img {
@@ -27,7 +27,21 @@
     color: white;
     padding: 10px;
 }
-
+.bestseller-buynow {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 24px;
+}
+.buynow-text {
+    color: white;
+    text-transform: uppercase;
+    background-color: #f86c2c;
+    border-radius: 50px;
+    padding: 12px 30px;
+    display: inline;
+    justify-content: center;
+    cursor: pointer;
+}
 .swiper {
     padding: 60px;
 }

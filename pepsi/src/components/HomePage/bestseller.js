@@ -120,7 +120,9 @@ const Bestseller = () => {
             {/* <div className='schwepp-bottom'>
                 <h1>gear</h1>
             </div> */}
-
+            <div className='bestseller-buynow'>
+                <div className='buynow-text'>Buy Now</div>
+            </div>
         </section>
 
     )
