@@ -1,0 +1,13 @@
+.card-login {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding-top: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .card-login {
+        padding: 150px 0px;
+    }
+}
