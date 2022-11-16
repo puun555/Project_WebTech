@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import './navbar.css'
-import { CiUser} from "react-icons/ci";
+import { CiUser, CiLogout} from "react-icons/ci";
 const Navul = styled.ul`
     display: flex;
     @media (max-width: 768px) {
@@ -53,7 +53,12 @@ const StyledBurger = styled.div`
         }
     }
 `
+const CheckLogin = (props)=>{
+    return
+}
 const Navbar = () => {
+    const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
+    console.log(Logined)
     const [open, setOpen] = useState(false)
     return (
         <div className="navbar">
@@ -87,9 +92,14 @@ const Navbar = () => {
                     <li><Link to="/product"><div className='navbar-item gradient' >view product</div></Link></li>
                     <li><Link to="/product"><div className='navbar-item gradient'>contact us</div></Link></li>
                     <li><Link to="/purches"><a><div className='navbar-item gradient' id='buy'>buy products</div></a></Link></li>
-                    <li><Link to="/login"><a><CiUser className='uiPeple'
+                    {Logined === 0 ?<li><Link to="/login"><a><CiUser className='uiPeple'
                         style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
-                    ></CiUser></a></Link></li>
+                    ></CiUser></a></Link></li>:
+                    <li><Link to="/"><a
+                    onClick={()=>setLogined(0)}>
+                        <CiLogout className='uiPeple'
+                        style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
+                    ></CiLogout></a></Link></li>}
                 </Navul>
             </div>
         </div>
