@@ -24,7 +24,7 @@
 .top-quote{
     color: white;
     position: relative;
-    top: 6%;
+    top: 8%;
     width: 100%;
     text-align: center;
     font-size: 3vh;
@@ -33,7 +33,7 @@
 .mid-quote{
     color: white;
     position: relative;
-    top: 18vh;
+    top: 20vh;
     width: 100%;
     text-align: center;
     font-size: 10vh;
