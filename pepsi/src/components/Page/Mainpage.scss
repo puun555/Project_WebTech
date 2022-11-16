@@ -89,5 +89,8 @@ label {
     align-items: center;
 }
 .mainpage-container {
+
+    display: flex;
+    justify-content:  space-between;
     margin-top: 6vw;
 }

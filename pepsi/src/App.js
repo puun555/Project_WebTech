@@ -4,6 +4,7 @@ import React from 'react';
 import {Routes, Route} from "react-router-dom";
 import MainPage from './components/Page/Mainpage.js'
 import ProductDetail from './components/product/ProductDetail/ProductDetail'
+import LoginPage from './components/Logincpn/LoginPage'
 function App() {
   return (
         <Routes>
@@ -11,6 +12,7 @@ function App() {
           <Route path="/purches" element={<MainPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
           <Route path="/product/:page" element={<ProductDetail/>}></Route>
+          <Route path="/login" element={<LoginPage/>}></Route>
         </Routes>
   );
 }

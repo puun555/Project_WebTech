@@ -22,9 +22,9 @@
     font-size: 58px;
     margin: 5px;
 }
-body {
+/* body {
     background-color: #ffe3d6;
-}
+} */
 @media only screen and (max-width: 500px) {
     .info-page {
         width: 60px;
