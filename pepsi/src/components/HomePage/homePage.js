@@ -19,8 +19,8 @@ function Homepage () {
             </section> */}
             <Banner></Banner>
             <Bestseller></Bestseller>
-            <New></New>
             <Bestoffer></Bestoffer>
+            <New></New>
             {/* <SectionCoke></SectionCoke> */}
             {/* <SectionVideo></SectionVideo> */}
             {/* <Pourstep></Pourstep> */}
