@@ -32,3 +32,20 @@
 .fanta{
     background-color: #F18809;
 }
+.fimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 25%;
+}
+@keyframes shake {
+    0%{transform: rotate(0deg) scale(1.2);}
+    25%{transform: rotate(360deg) scale(1.2);}
+    50%{transform: rotate(360deg) scale(1.2);}
+    75%{transform: rotate(360deg) scale(1.2);}
+    100%{transform: rotate(360deg) scale(1.2);}
+}
+.fimg:hover{
+    animation: 1s shake;
+}

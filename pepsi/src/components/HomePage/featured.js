@@ -7,16 +7,16 @@ const Featured = ()=>{
             </div>
             <div className='featured-bot'>
                 <div className='boxf schweppes'>
-                    <img className='img-sch' src='img\schweppes.png' width="100%"></img>
+                    <img className='fimg' src='img\schweppes.png' width="80%"></img>
                 </div>
                 <div className='boxf pepsi'>
-                    <img src='img\pepsi.png' width="100%"></img>
+                    <img className='fimg' src='img\pepsi.png' width="80%"></img>
                 </div>
                 <div className='boxf sprite'>
-                    <img src='img\sprite.png' width="100%"></img>
+                    <img className='fimg' src='img\sprite.png' width="80%"></img>
                 </div>
                 <div className='boxf fanta'>
-                    <img src='img\fanta.png' width="100%"></img>
+                    <img className='fimg' src='img\fanta.png' width="80%"></img>
                 </div>
             </div>
             
