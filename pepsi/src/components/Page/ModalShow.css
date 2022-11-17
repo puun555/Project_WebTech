@@ -1,35 +1,85 @@
 .box-modal{
     display: flex;
 }
+:root{
+    --bs-modal-border-radius: 20px
+}
 .left-modal{
 
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    background-color: black;
     margin-right: 2vw;
 }
 .left-modal img{
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
     height: 100%;
-    width: 250px;
+    width: 220px;
+}
+.right-modal h3{
+    margin: 0;
+    margin-bottom: 0;
+}
+.right-modal p{
+    margin-top: 1vw;
 }
 .right-modal{
     padding: 1vw;
     width: 500px;
 }
-a{
-    font-size: 12px;
+.title-up{
     margin: 0;
-    padding: 0 ;
+}
+.title{
+    border-bottom: 2px solid black;
+    padding-bottom: 1vw;
+}
+.agear{
+    font-size: 15px;
+    margin: 0;
+    padding-top: 12px ;
 }
 .button-group{
+    height:120px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1;
     display: flex;
+}
+.pinbutton{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right:  2vw;
 }
 .botton{
     color: white;
     transition: 5ms;
-    background-color:#EB6440 ;
+    background-color: #EB6440;
 }
-.botton:hover{
+.botton:focus{
     background-color: black;
 }
+#sizebtn{
+    margin-bottom: 1.8vw;
+}
 .submitbutton{
-    margin-left: 1vw;
-    margin-top: 4vw;
+    display: flex;
+    margin-left: 0vw;
+
+}
+.Modalcontainer{
+    background-color: white;
+}
+.modal-content  {
+
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important; 
+}
+.selected{
+    margin-left: 2vw;
 }

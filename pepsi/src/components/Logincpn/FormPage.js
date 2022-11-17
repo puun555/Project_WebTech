@@ -12,7 +12,7 @@ const FormPage = () => {
     };
 
     const submition = () => {
-        
+
         setLoginState(1)
     }
     useEffect(() => {

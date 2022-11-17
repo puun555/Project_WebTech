@@ -59,6 +59,9 @@ const CheckLogin = (props)=>{
 const Navbar = () => {
     const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     console.log(Logined)
+    const loging = ()=>{
+        localStorage.setItem('login', 0);
+    }
     const [open, setOpen] = useState(false)
     return (
         <div className="navbar">
@@ -94,9 +97,12 @@ const Navbar = () => {
                     <li><Link to="/purches"><a><div className='navbar-item gradient' id='buy'>buy products</div></a></Link></li>
                     {Logined === 0 ?<li><Link to="/login"><a><CiUser className='uiPeple'
                         style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
+                    ></CiUser></a></Link></li>: Logined == null ?<li><Link to="/login"><a
+                    onClick={()=>loging()}><CiUser className='uiPeple'
+                    style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiUser></a></Link></li>:
                     <li><Link to="/"><a
-                    onClick={()=>setLogined(0)}>
+                    onClick={()=>loging()}>
                         <CiLogout className='uiPeple'
                         style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiLogout></a></Link></li>}
