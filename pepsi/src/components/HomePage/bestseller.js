@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './bestseller.css'
+import { Link } from "react-router-dom";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Bestseller = () => {
     return (
@@ -121,7 +122,7 @@ const Bestseller = () => {
                 <h1>gear</h1>
             </div> */}
             <div className='bestseller-buynow'>
-                <div className='buynow-text'>Buy Now</div>
+                <Link to="/purches"><div className='buynow-text buynow-text-white'>Buy Now</div></Link>
             </div>
         </section>
 

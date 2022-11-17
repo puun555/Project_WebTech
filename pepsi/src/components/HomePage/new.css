@@ -53,3 +53,38 @@
     margin-left: 54px;
     font-size: 18px;
 }
+.new-buynow {
+    text-align: left;
+    padding-top: 25px;
+    font-size: 24px;
+    margin-top: 3vh;
+    margin-left: 54px;
+}
+.new-buynow a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.new {
+    color: white;
+    text-transform: uppercase;
+    background-color: #f86c2c;
+    border-radius: 50px;
+    padding: 12px 30px;
+    display: inline;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(248, 108, 44, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); 
+}
+.new:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #f86c2c; 
+}
