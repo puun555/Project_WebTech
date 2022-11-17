@@ -8,6 +8,7 @@ import Bestoffer from './bestoffer'
 import './homePage.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Featured from './featured';
+import VdoPage from './VdoPage';
 function Homepage () {
     {window.scroll(0,0)}
     return (
@@ -23,8 +24,8 @@ function Homepage () {
             <Bestseller></Bestseller>
             <Bestoffer></Bestoffer>
             <New></New>
+            <VdoPage></VdoPage>
             {/* <SectionCoke></SectionCoke> */}
-            {/* <SectionVideo></SectionVideo> */}
             {/* <Pourstep></Pourstep> */}
             <Footer></Footer>
         </div>
