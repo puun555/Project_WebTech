@@ -5,7 +5,7 @@
     display: flex;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     background-color: white ;
     color: #c3c3c3;
     align-items: center;
@@ -33,6 +33,11 @@
     color: #f86c2c;
     cursor: pointer;
 }
+.hovercolor{
+    text-decoration: none;
+    color: #c3c3c3;
+    margin: 5px;
+}
 .hovercolor:hover {
     color: #f86c2c;
     cursor: pointer;
@@ -42,7 +47,7 @@
     padding: 5px;
     margin-top: 10px;
     margin-left: 5px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 .youtube {
     display: inline-block;

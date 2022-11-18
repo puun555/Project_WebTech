@@ -1,25 +1,20 @@
 import './footer.css'
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className='footer-container'>
             <div className='footer-header'>
                 <h2>KUMI SHOP</h2>
             </div>
-            <div className='hovercolor'>
-                Questions?
-            </div>
+            <Link to="/contact"><div className='hovercolor'>
+                Contact us
+            </div></Link>
             <div className='footer-centerbottom'>
-                <div className='hovercolor'>
-                    Home
-                </div>
-                <div className='footer-services'>
-                    Services
-                </div>
-                <div className='footer-services'>
-                    About
+                <div className='copyright'>
+                © 2022 KUMI SHOP, Inc. All Rights Reserved.
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <a href=""
                     className="youtube">
                     <img className='icon' src='socials_icon/youtube.png'></img>
@@ -50,7 +45,7 @@ const Footer = () => {
                     <img className='icon' src='socials_icon/tiktok.png'></img>
                     <img className='icon-hover' src='socials_icon/tiktok_hover.png'></img>
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }

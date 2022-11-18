@@ -5,12 +5,14 @@ import {Routes, Route} from "react-router-dom";
 import MainPage from './components/Page/Mainpage.js'
 import ProductDetail from './components/product/ProductDetail/ProductDetail'
 import LoginPage from './components/Logincpn/LoginPage'
+import ContactPage from './components/Contact/contact'
 function App() {
   return (
         <Routes>
           <Route path="/" element={<Homepage/>}></Route>
           <Route path="/purches" element={<MainPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
+          <Route path="contact" element={<ContactPage/>}></Route>
           <Route path="/product/:page" element={<ProductDetail/>}></Route>
           <Route path="/login" element={<LoginPage/>}></Route>
         </Routes>

@@ -24,11 +24,11 @@
 .top-quote{
     color: white;
     position: relative;
-    top: 8%;
+    top: 9%;
     width: 100%;
     text-align: center;
     font-size: 3vh;
-    padding: 1%;
+    padding: 2%;
 }
 .mid-quote{
     color: white;
@@ -67,12 +67,17 @@
     font-size: 3vh;
 }
 .b-item-img {
-    max-width: 50vh;
+    width: 30vh;
     /* min-height: 200px; */
 }
 @media screen and (max-width: 1400px){
     .b-item-img {
         max-width: 25vh;
+    }
+}
+@media screen and (max-width: 1000px){
+    .b-item-img {
+        max-width: 20vh;
     }
 }
 .b-item-box {
