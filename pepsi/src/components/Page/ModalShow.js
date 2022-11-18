@@ -67,13 +67,13 @@ const  MyVerticallyCenteredModal = (props)=>{
                 <div className='right-modal'>
                     <div className='title'>
                         <p className='title-up'>Product</p>
-                        <h3>{props.items.name} 325มล.</h3>
-                        <p>น้ำอัดลมสุดแสนจะอร่อย บริการให้คุณอย่างสะดวกสบายเพียงแค่ปลายนิ้ว ท่านสามารถเลือกได้ว่าจะสั้งแบบไหน</p>
-                        <h4>{props.items.price} <small>บาท</small>/ ชิ้น</h4>
-                        <h4>{props.items.price*6} <small>บาท</small>/ แพ็ค(6ขิ้น)</h4>
+                        <h3>{props.items.name} 325 ML.</h3>
+                        <p>Super delicious soft drink Service for you conveniently at your fingertips. You can choose which one to order.</p>
+                        <h4>{props.items.price} <small>Baht</small>/Can</h4>
+                        <h4>{props.items.price*6} <small>Baht</small>/Pack(6 Can)</h4>
                     </div>
                     <div className='button-group'>
-                    <h2 className='pinbutton'>เลือกสิ้นค้า</h2>
+                    <h2 className='pinbutton'>Select product</h2>
                            <div id='sizebtn' role="button" className="rounded d-flex justify-content-center align-items-center botton"
                             style={{
                             color: "white",
@@ -86,7 +86,7 @@ const  MyVerticallyCenteredModal = (props)=>{
                             }}
                             onClick={()=>getSize( "1")}
                             tabIndex="1">
-                                1 ชิ้น
+                                1 Can
                             
                            </div>
                            <div id='sizebtn'role="button" className="rounded  d-flex justify-content-center align-items-center botton"
@@ -101,13 +101,13 @@ const  MyVerticallyCenteredModal = (props)=>{
                             }}
                             onClick={()=>getSize("6")}
                             tabIndex="1">
-                                1 pack
+                                1 Pack
                            </div>
                     </div>
                         <div className='submitbutton'>
                             <a type="button" className="rounded  btn btn-primary btn-lg btn-block bg-dark agear"
                                 onClick={()=>getData(props, Size)}
-                            >Add To Cart</a>
+                            >Add to cart</a>
                         </div>
                     </div>
             </div>
