@@ -42,8 +42,10 @@
     outline: none;
 }
 
-
-.form-page button {
+.hi{
+    margin: 0;
+}
+.a {
     margin-top: 50px;
     width: 300px;
     background: linear-gradient(to right, #BB3B00 , #F86C2C) ;
@@ -53,6 +55,7 @@
     cursor: pointer;
     color: white;
     box-shadow: 0.5px 0.5px 2px 0.3px black;
+    text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
@@ -71,7 +74,7 @@
         width: 150px;
     }
 
-    .form-page button {
+    .a {
         
         width: 150px;
         margin-top: 40px;

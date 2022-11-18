@@ -101,8 +101,8 @@ const Navbar = () => {
                     onClick={()=>loging()}><CiUser className='uiPeple'
                     style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiUser></a></Link></li>:
-                    <li><Link to="/"><a
-                    onClick={()=>loging()}>
+                    <li><Link to="/">
+                        <a onClick={()=>loging()}>
                         <CiLogout className='uiPeple'
                         style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiLogout></a></Link></li>}

@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router-dom";
 import MainPage from './components/Page/Mainpage.js'
 import ProductDetail from './components/product/ProductDetail/ProductDetail'
 import LoginPage from './components/Logincpn/LoginPage'
+import Payment from './components/Payment/PaymentPage';
 function App() {
   return (
         <Routes>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/product" element={<ProductPage/>}></Route>
           <Route path="/product/:page" element={<ProductDetail/>}></Route>
           <Route path="/login" element={<LoginPage/>}></Route>
+          <Route path="/payment" element={<Payment/>}></Route>
         </Routes>
   );
 }

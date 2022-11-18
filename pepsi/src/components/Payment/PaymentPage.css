@@ -1,0 +1,14 @@
+.payment-card {
+    height : 1300px;
+    width: 760px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 5px 1px rgb(104, 95, 95);
+}
+.payment-card h1 {
+    color: #f86c2c;
+    font-size: 50px;
+    margin: 0px;
+}
