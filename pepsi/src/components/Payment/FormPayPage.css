@@ -1,0 +1,70 @@
+.name {
+    display: flex;
+}
+.name div {
+    margin-right: 30px;
+}
+
+.pay-form p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.pay-form {
+    margin-left: 20px;
+}
+
+.pay-form div{
+    margin-bottom: 10px;
+}
+.name-input input {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.phone input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+.email input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+
+.address textarea{
+    resize: none;
+    border: 1px solid;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#flie-up {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: linear-gradient(to right,#f86c2c, #ff5100);
+    color: #fff;
+}

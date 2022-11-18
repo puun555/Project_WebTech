@@ -1,0 +1,22 @@
+.path-page p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.info1 {
+    padding: 50px;
+}
+
+.img-con {
+    display: flex;
+}
+
+.qr-img {
+    padding: 50px;
+    width: 400px;
+    border-radius: 60px;
+}
+
+.icon-img {
+    width: 90px;
+}

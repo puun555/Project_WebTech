@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a041e78.css",
+    "main.js": "/static/js/main.e7534781.js",
+    "static/js/787.24fdd02f.chunk.js": "/static/js/787.24fdd02f.chunk.js",
+    "static/media/Fanta-Logo.png": "/static/media/Fanta-Logo.f6c8b3f280c43c27712a.png",
+    "static/media/Sprite-Icon.jpg": "/static/media/Sprite-Icon.f31cb96c934a04fa6a3f.jpg",
+    "static/media/Schweppes-Icon.png": "/static/media/Schweppes-Icon.81f8fe6471a1d28c54e0.png",
+    "static/media/Schweppes-Logo.png": "/static/media/Schweppes-Logo.bb5b2f9d58ca9adbaf1d.png",
+    "static/media/Fanta-Icon.png": "/static/media/Fanta-Icon.b161675bd592183b9a3b.png",
+    "static/media/Pepsi-Logo.png": "/static/media/Pepsi-Logo.3abb752d3f9213edbe88.png",
+    "static/media/Sprite-Logo.png": "/static/media/Sprite-Logo.7e640339c93a3c651274.png",
+    "static/media/Pepsi-Icon.png": "/static/media/Pepsi-Icon.ad406c1e4c9d6d06b0a8.png",
+    "static/media/svghh.svg": "/static/media/svghh.98cfbcb1a8181623dfec.svg",
+    "index.html": "/index.html",
+    "main.7a041e78.css.map": "/static/css/main.7a041e78.css.map",
+    "main.e7534781.js.map": "/static/js/main.e7534781.js.map",
+    "787.24fdd02f.chunk.js.map": "/static/js/787.24fdd02f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a041e78.css",
+    "static/js/main.e7534781.js"
+  ]
+}

@@ -1,6 +1,8 @@
 import Button from 'react-bootstrap/esm/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './OffCanvas.css'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 const MyOffcanvas = (props)=>{
     const DelData = (data)=>{
         props.Deldata(data)
@@ -8,10 +10,12 @@ const MyOffcanvas = (props)=>{
     const AddData= (data)=>{
         props.addData(data)
     }
+    const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     return(
         <Offcanvas show={props.show} onHide={props.onHide} placement='end'>
         <Offcanvas.Header>
             <h1>Your Items</h1>
+            {Logined === 1?<Link to="/payment"> <a>Shopping</a> </Link>:<Link to="/login"><a>Login</a></Link>}
         </Offcanvas.Header>
         <Offcanvas.Body>
             {props.data.map(data=>(
@@ -31,6 +35,7 @@ const MyOffcanvas = (props)=>{
                                 <a type="button" className="btn btn-primary btn-xs btn-block bg-dark" onClick={()=>AddData(data)}>+</a>
                                 <a type="button" className="btn btn-primary btn-xs btn-block bg-dark" onClick={()=>DelData(data)}>-</a>
                             </div>
+                            
                            
                         </div>
                     </div>
