@@ -10,5 +10,16 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 8%;
+    top: 10%;
 }
+.control {
+    cursor:pointer;
+    padding: 10px 20px;
+    background:white;
+    color: #f86c2c;
+    border-radius: 5vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
