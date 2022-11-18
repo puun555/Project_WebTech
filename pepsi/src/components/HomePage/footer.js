@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='footer-header'>
                 <h2>KUMI SHOP</h2>
             </div>
-            <Link to="/contact"><div className='hovercolor'>
+            <Link to="/contact" style={{textDecoration: 'none'}}><div className='hovercolor'>
                 Contact us
             </div></Link>
             <div className='footer-centerbottom'>
