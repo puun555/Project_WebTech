@@ -45,6 +45,9 @@ body{
     position: absolute;
     z-index: 100;
 }
+.instagram:hover .c-icon-hover {
+    display: inline;
+}
 .github:hover .c-icon-hover {
     display: inline;
 }
@@ -62,9 +65,9 @@ body{
 .github:hover .c-icon-hover {
     display: inline;
 }
-.tew-box{
+.c-box{
     width: 40%;
-    height: 10%;
+    height: fit-content;
     margin: 3vh;
     top: 11%;
     background-color: white;
@@ -74,57 +77,19 @@ body{
     margin-left: auto;
     text-align: center;
     border-radius: 100px;
-
+}
+.tew-box{
+    
 }
 .nu-box{
-    width: 40%;
-    height: 10%;
-    margin: 3vh;
-    top: 11%;
-    background-color: white;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border-radius: 100px;
+    
 }
 .puun-box{
-    width: 40%;
-    height: 10%;
-    margin: 3vh;
-    top: 11%;
-    background-color: white;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border-radius: 100px;
+    
 }
 .gear-box{
-    width: 40%;
-    height: 10%;
-    margin: 3vh;
-    top: 11%;
-    background-color: white;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border-radius: 100px;
+    
 }
 .mai-box{
-    width: 40%;
-    height: 10%;
-    margin: 3vh;
-    top: 11%;
-    background-color: white;
-    position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border-radius: 100px;
+    
 }

@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="contact-container">
             <Navbar/>
-            <div className="tew-box">
+            <div className="c-box tew-box">
                 Teerawat Sangjun<br></br>
                 <a href="https://www.facebook.com/kisaragi.kz" target='blank' className="facebook">
                     <img className='c-icon' src='socials_icon/facebook.png'></img>
@@ -20,7 +20,7 @@ const Contact = () => {
                     <img className='c-icon-hover' src='socials_icon/github_hover.png'></img>
                 </a>
             </div>
-            <div className="nu-box">
+            <div className="c-box nu-box">
                 Punnathat Samoprong<br></br>
                 <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100016860240232" target='blank' className="facebook">
                     <img className='c-icon' src='socials_icon/facebook.png'></img>
@@ -35,7 +35,7 @@ const Contact = () => {
                     <img className='c-icon-hover' src='socials_icon/github_hover.png'></img>
                 </a>
             </div>
-            <div className="puun-box">
+            <div className="c-box puun-box">
                 Puun Wachangern<br></br>
                 <a href="https://www.facebook.com/Puun.Vachangngern" target='blank' className="facebook">
                     <img className='c-icon' src='socials_icon/facebook.png'></img>
@@ -50,7 +50,7 @@ const Contact = () => {
                     <img className='c-icon-hover' src='socials_icon/github_hover.png'></img>
                 </a>
             </div>
-            <div className="gear-box">
+            <div className="c-box gear-box">
                 Vorawee Veerawan<br></br>
                 <a href="https://www.facebook.com/profile.php?id=100008401099016" target='blank' className="facebook">
                     <img className='c-icon' src='socials_icon/facebook.png'></img>
@@ -65,7 +65,7 @@ const Contact = () => {
                     <img className='c-icon-hover' src='socials_icon/github_hover.png'></img>
                 </a>
             </div>
-            <div className="mai-box">
+            <div className="c-box mai-box">
                 Sahadsawat Boonphuen<br></br>
                 <a href="https://www.facebook.com/Maily.Thousand" target='blank' className="facebook">
                     <img className='c-icon' src='socials_icon/facebook.png'></img>
