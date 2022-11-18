@@ -10,6 +10,7 @@ import { useState , useEffect, useRef} from 'react'
 import Navbar from "../HomePage/navbar";
 
 const MainPage = (props)=>{
+    const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     const [NewItems, setNewItem ] = useState([])
     const [searchText, setSeacrhText] = useState('')
     const [FilteredItems,  setFilteredItems] = useState(items)
@@ -71,16 +72,19 @@ const MainPage = (props)=>{
         
     const didMount = useRef(false);
     useEffect(() => {
-      if (NewItems == null) {
-        setNewItem([]);
-      }
-      if (didMount.current) {
-        localStorage.setItem("cart", JSON.stringify(NewItems));
-      } else {
-        didMount.current = true;
-        const saveCart = localStorage.getItem("cart");
-        setNewItem(JSON.parse(saveCart));
-      }
+        if(Logined == 1){
+            if(NewItems == null) {
+                setNewItem([]);
+              }
+              if (didMount.current) {
+                localStorage.setItem("cart", JSON.stringify(NewItems));
+              } else {
+                didMount.current = true;
+                const saveCart = localStorage.getItem("cart");
+                setNewItem(JSON.parse(saveCart));
+              }
+        }
+      
     }, [NewItems]);
     
     return(
