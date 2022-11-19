@@ -5,8 +5,7 @@ import Footer from './footer';
 import Bestseller from './bestseller';
 import New from './new';
 import Bestoffer from './bestoffer'
-import './homePage.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './homePage.css';
 import Featured from './featured';
 import VdoPage from './VdoPage';
 function Homepage () {

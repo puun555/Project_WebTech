@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import pepsi from "./img_product/PEPSI.png";
+import fantaOrange from "./img_product/FANTA ORANGE.png";
+import SCHWEPPE_STONIC_WATER from "./img_product/SCHWEPPES TONIC WATER.png";
+import sprite from "./img_product/SPRITE.png";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Banner = ()=>{
     return(
@@ -65,25 +69,25 @@ const Banner = ()=>{
                 >
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product/PEPSI.png" alt=""></img>
+                        <img className='b-item-img' src={pepsi} alt=""></img>
                         <h2 className='b-item-text'>PEPSI</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product/FANTA ORANGE.png" alt=""></img>
+                        <img src={fantaOrange} className='b-item-img'  alt=""></img>
                         <h2 className='b-item-text'>FANTA ORANGE</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product/SCHWEPPES TONIC WATER.png" alt=""></img>
+                        <img src={SCHWEPPE_STONIC_WATER} className='b-item-img'  alt=""></img>
                         <h2 className='b-item-text'>SCHWEPPES TONIC WATER</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='b-item-box'>
-                        <img className='b-item-img' src="img_product/SPRITE.png" alt=""></img>
+                        <img src={sprite} className='b-item-img'  alt=""></img>
                         <h2 className='b-item-text'>SPRITE</h2>
                     </div>
                 </SwiperSlide>
