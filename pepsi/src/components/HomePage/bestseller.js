@@ -14,7 +14,7 @@ import pepsiwildzero from "./img_product/PEPSI ZERO SUGAR WILD CHERRY.png"
 import fantaberry from "./img_product/FANTA BERRY.png"
 import fantaorange from "./img_product/FANTA ORANGE.png"
 import SCHWEPPESlemon from "./img_product/SCHWEPPES BITTER LEMON.png"
-import SCHWEPPESsoda from "./img_product/SCHWEPPES SODA WATER.png"
+import SCHWEPPESsoda from "./img_product/SCHWEPPES SODA WATER.png";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Bestseller = () => {
     return (
@@ -31,6 +31,8 @@ const Bestseller = () => {
                 navigation={true}
                 // pagination={{clickable: true}}
                 scrollbar={{ dragable: true }}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
                 loop={true}
                 autoplay={{
                     delay: 3000,
