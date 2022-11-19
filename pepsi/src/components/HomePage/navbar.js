@@ -60,6 +60,7 @@ const Navbar = () => {
     const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     console.log(Logined)
     const loging = ()=>{
+        {window.location.reload();}
         localStorage.setItem('login', 0);
     }
     const [open, setOpen] = useState(false)
