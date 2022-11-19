@@ -13,8 +13,11 @@ const MyOffcanvas = (props)=>{
     const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     return(
         <Offcanvas show={props.show} onHide={props.onHide} placement='end'>
-        <Offcanvas.Header>
-            <h1>Your Items</h1>
+        <Offcanvas.Header >
+            <div style={{display:"flex",flexDirection:"column"}}>
+                <h1>Your Items</h1>
+                <h1>เกียร์หน้าหี</h1>
+            </div>
             {Logined === 1?<Link to="/payment"> <a>Shopping</a> </Link>:<Link to="/login"><a>Login</a></Link>}
         </Offcanvas.Header>
         <Offcanvas.Body>

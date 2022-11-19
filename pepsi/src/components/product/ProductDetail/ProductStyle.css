@@ -79,6 +79,9 @@
 .detail-right{
     margin-left: 20px;
 }
+.detail-img{
+    width:300px;
+}
 .detail-left .detail-navbar{
     text-decoration: none;
     padding: 7px 0;
