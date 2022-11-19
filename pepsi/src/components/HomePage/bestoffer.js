@@ -28,5 +28,4 @@ const Bestoffer = () => {
         </div>
     )
 }
-
 export default Bestoffer
