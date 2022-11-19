@@ -1,7 +1,7 @@
 import ProductPage from './components/product/ProductPage'
 import Homepage from './components/HomePage/homePage';
 import React from 'react';
-import {Routes, Route} from "react-router-dom";
+import {HashRouter, Router, Routes, Route} from "react-router-dom";
 import MainPage from './components/Page/Mainpage.js'
 import ProductDetail from './components/product/ProductDetail/ProductDetail'
 import LoginPage from './components/Logincpn/LoginPage'
@@ -9,7 +9,8 @@ import Payment from './components/Payment/PaymentPage';
 import ContactPage from './components/Contact/contact'
 function App() {
   return (
-      <Routes>
+    <HashRouter>
+        <Routes>
           <Route path="/" element={<Homepage/>}></Route>
           <Route path="/purches" element={<MainPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/payment" element={<Payment/>}></Route>
         </Routes>
+    </HashRouter>
   );
 }
 
