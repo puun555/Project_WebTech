@@ -18,8 +18,10 @@ const FormPage = () => {
     const submition = () => {
         if (username.length === 0 || password.length === 0) {
             alert("Please Enter your Name")
+            
         }
         else {
+            window.location = "http://10.30.23.19/project/it1/";
             setLoginState(1)
         }
     }
@@ -36,7 +38,8 @@ const FormPage = () => {
                     <h1>Who wants <span>Drinks?</span></h1>
                     <input className='un' type='text' placeholder='Username' onChange={handleInput} /><br/>
                     <input type='password' placeholder='Password' onChange={handleInput2} /><br/>
-                    <a href="/Webtech/purches" onClick={submition} className="a">Login</a>
+                    <Link path="/purches" onClick={submition} className="a">Login</Link>
+                    {/* <a href="/project/it1/test_mai/#/purches" ></a> */}
                 </form>
             </div>
         );

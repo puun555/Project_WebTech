@@ -117,7 +117,7 @@ const ProductDetail = () =>{
                         </Link>
                     </div>
                     <div className="detail-right">
-                        <img className="detail-img" src={`../${Item[page].img_product}`} alt=""/>
+                        <img className="detail-img" src={`/${Item[page].img_product}`} alt=""/>
                     </div>
                 </div>
             </div>
