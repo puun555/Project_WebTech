@@ -34,7 +34,7 @@ const FormPage = () => {
                     <h1>Who wants <span>Drinks?</span></h1>
                     <input className='un' type='text' placeholder='Username' onChange={handleInput} /><br/>
                     <input type='password' placeholder='Password' onChange={handleInput2} /><br/>
-                    <a href="/Webtech/purches" className='a' type = 'submit' onClick={submition}>Login</a>
+                    <a href="/Webtech/purches" className='a' type = 'submit' onClick={submition}>LOGIN</a>
                 </form>
             </div>
         );
