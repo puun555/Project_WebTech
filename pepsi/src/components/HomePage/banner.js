@@ -29,8 +29,6 @@ const Banner = ()=>{
                     navigation={true}
                     pagination={{clickable: true}}
                     scrollbar={{ dragable: false }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     loop={true}
                     style={{
                         "--swiper-pagination-color": "#f86c2c",

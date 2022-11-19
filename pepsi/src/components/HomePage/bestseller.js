@@ -22,8 +22,6 @@ const Bestseller = () => {
                 navigation={true}
                 // pagination={{clickable: true}}
                 scrollbar={{ dragable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 loop={true}
                 autoplay={{
                     delay: 3000,
