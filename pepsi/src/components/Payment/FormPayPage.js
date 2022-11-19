@@ -28,10 +28,13 @@ const FormPayPage = () => {
             </div>
             <div className="slip">
                 <p>หลักฐานการชำระเงิน</p>
-                <label className='button-custom' for="flie-up">Upload</label>
                 <input id="flie-up" type="file" />
             </div>
-
+            <a href='/purches'>
+                <div className='butt'>
+                    Submit
+                </div>
+            </a>
         </form>
     );
 }
