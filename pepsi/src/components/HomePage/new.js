@@ -1,5 +1,6 @@
 import './new.css'
 import { Link } from "react-router-dom";
+import schweppesimg1 from './img_product/SCHWEPPES RASPBERRY GINGER ALE.png'
 const New = () => {
     return (
         <div className='new-container'>
@@ -10,7 +11,7 @@ const New = () => {
             </div>
             <div className='new-right'>
                 <div className='new-img'>
-                    <img className='newimg' src='img_product\SCHWEPPES RASPBERRY GINGER ALE.png'></img>
+                    <img className='newimg' src={schweppesimg1}></img>
                     <div className='new-price'>19 Baht</div>
                 </div>
                 <div className='new-text'>

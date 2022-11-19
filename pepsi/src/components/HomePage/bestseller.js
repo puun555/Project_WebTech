@@ -6,6 +6,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './bestseller.css'
 import { Link } from "react-router-dom";
+import spritecranberry from "./img_product/SPRITE WINTER SPICED CRANBERRY ZERO SUGAR.png"
+import spritezero from "./img_product/SPRITE ZERO SUGAR.png"
+import pepsizero from "./img_product/PEPSI ZERO SUGAR MANGO.png"
+import dietpepsi from "./img_product/DIET PEPSI CAFFEINE FREE.png"
+import pepsiwildzero from "./img_product/PEPSI ZERO SUGAR WILD CHERRY.png"
+import fantaberry from "./img_product/FANTA BERRY.png"
+import fantaorange from "./img_product/FANTA ORANGE.png"
+import SCHWEPPESlemon from "./img_product/SCHWEPPES BITTER LEMON.png"
+import SCHWEPPESsoda from "./img_product/SCHWEPPES SODA WATER.png";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Bestseller = () => {
     return (
@@ -22,6 +31,8 @@ const Bestseller = () => {
                 navigation={true}
                 // pagination={{clickable: true}}
                 scrollbar={{ dragable: true }}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
                 loop={true}
                 autoplay={{
                     delay: 3000,
@@ -51,55 +62,55 @@ const Bestseller = () => {
             >
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\SPRITE WINTER SPICED CRANBERRY ZERO SUGAR.png" alt></img>
+                        <img className='item-img' src={spritecranberry} alt></img>
                         <h2 className='item-text'>SPRITE WINTER SPICED CRANBERRY ZERO SUGAR</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\SPRITE ZERO SUGAR.png"></img>
+                        <img className='item-img' src={spritezero}></img>
                         <h2 className='item-text'>SPRITE ZERO SUGAR</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\PEPSI ZERO SUGAR MANGO.png" alt></img>
+                        <img className='item-img' src={pepsizero} alt></img>
                         <h2 className='item-text'>PEPSI ZERO SUGAR MANGO</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\DIET PEPSI CAFFEINE FREE.png" alt></img>
+                        <img className='item-img' src={dietpepsi} alt></img>
                         <h2 className='item-text'>DIET PEPSI CAFFEINE FREE</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\PEPSI ZERO SUGAR WILD CHERRY.png"></img>
+                        <img className='item-img' src={pepsiwildzero}></img>
                         <h2 className='item-text'>PEPSI ZERO SUGAR WILD CHERRY</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\FANTA BERRY.png" alt></img>
+                        <img className='item-img' src={fantaberry} alt></img>
                         <h2 className='item-text'>FANTA BERRY</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\FANTA ORANGE.png"></img>
+                        <img className='item-img' src={fantaorange}></img>
                         <h2 className='item-text'>FANTA ORANGE</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\SCHWEPPES BITTER LEMON.png" alt></img>
+                        <img className='item-img' src={SCHWEPPESlemon} alt></img>
                         <h2 className='item-text'>SCHWEPPES BITTER LEMON</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='item-box'>
-                        <img className='item-img' src="img_product\SCHWEPPES SODA WATER.png"></img>
+                        <img className='item-img' src={SCHWEPPESsoda}></img>
                         <h2 className='item-text'>SCHWEPPES SODA WATER</h2>
                     </div>
                 </SwiperSlide>
