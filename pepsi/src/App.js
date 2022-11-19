@@ -9,7 +9,7 @@ import Payment from './components/Payment/PaymentPage';
 import ContactPage from './components/Contact/contact'
 function App() {
   return (
-        <Routes>
+      <Routes>
           <Route path="/" element={<Homepage/>}></Route>
           <Route path="/purches" element={<MainPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
