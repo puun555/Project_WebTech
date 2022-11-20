@@ -23,13 +23,13 @@ const FormPage = () => {
             })
         }
         if(one) {
-            setLoginState(1)
             Swal.fire({
                 title: 'Login Success!\nEnjoy Your Shopping!',
                 text: '',
                 icon: `success`,
             })
             setOne(false);
+            setLoginState(1)
         }
     }
   
