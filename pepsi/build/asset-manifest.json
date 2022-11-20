@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.276e4f2e.css",
-    "main.js": "./static/js/main.34a423d0.js",
+    "main.css": "./static/css/main.653a07da.css",
+    "main.js": "./static/js/main.5893fe36.js",
     "static/js/787.606b69ae.chunk.js": "./static/js/787.606b69ae.chunk.js",
     "static/media/vdo.mp4": "./static/media/vdo.56207fb0977eb75b9600.mp4",
     "static/media/Fanta-Logo.png": "./static/media/Fanta-Logo.f6c8b3f280c43c27712a.png",
@@ -13,30 +13,29 @@
     "static/media/SCHWEPPES BITTER LEMON.png": "./static/media/SCHWEPPES BITTER LEMON.ff5dc273e9bdcad6f8b8.png",
     "static/media/FANTA ORANGE.png": "./static/media/FANTA ORANGE.a0751ebe2ee3cf94ec56.png",
     "static/media/SCHWEPPES SODA WATER.png": "./static/media/SCHWEPPES SODA WATER.57873de73d4c284650bb.png",
-    "static/media/Sprite-Icon.jpg": "./static/media/Sprite-Icon.f31cb96c934a04fa6a3f.jpg",
     "static/media/DIET PEPSI CAFFEINE FREE.png": "./static/media/DIET PEPSI CAFFEINE FREE.c08b889b662c20e49191.png",
-    "static/media/Schweppes-Icon.png": "./static/media/Schweppes-Icon.81f8fe6471a1d28c54e0.png",
     "static/media/schweppes.png": "./static/media/schweppes.11c762cef9c6778d2b9b.png",
     "static/media/SPRITE.png": "./static/media/SPRITE.84e43e286563e6941416.png",
     "static/media/Schweppes-Logo.png": "./static/media/Schweppes-Logo.bb5b2f9d58ca9adbaf1d.png",
+    "static/media/Sprite-Icon.png": "./static/media/Sprite-Icon.8642ee9bfc9b68fa5da3.png",
     "static/media/sprite.png": "./static/media/sprite.8642ee9bfc9b68fa5da3.png",
     "static/media/Fanta-Icon.png": "./static/media/Fanta-Icon.b161675bd592183b9a3b.png",
     "static/media/PEPSI ZERO SUGAR WILD CHERRY.png": "./static/media/PEPSI ZERO SUGAR WILD CHERRY.65fb09a21fd00bb37380.png",
     "static/media/fanta.png": "./static/media/fanta.32ae45aa48c342d60ecc.png",
     "static/media/PEPSI.png": "./static/media/PEPSI.d5e996c1da577be5f419.png",
     "static/media/PEPSI ZERO SUGAR MANGO.png": "./static/media/PEPSI ZERO SUGAR MANGO.016e412c3deb332dce57.png",
+    "static/media/Pepsi-Icon.png": "./static/media/Pepsi-Icon.c8e48b1a295ca51ec499.png",
     "static/media/pepsi.png": "./static/media/pepsi.c8e48b1a295ca51ec499.png",
     "static/media/Pepsi-Logo.png": "./static/media/Pepsi-Logo.3abb752d3f9213edbe88.png",
     "static/media/Sprite-Logo.png": "./static/media/Sprite-Logo.7e640339c93a3c651274.png",
-    "static/media/Pepsi-Icon.png": "./static/media/Pepsi-Icon.ad406c1e4c9d6d06b0a8.png",
     "static/media/svghh.svg": "./static/media/svghh.98cfbcb1a8181623dfec.svg",
     "index.html": "./index.html",
-    "main.276e4f2e.css.map": "./static/css/main.276e4f2e.css.map",
-    "main.34a423d0.js.map": "./static/js/main.34a423d0.js.map",
+    "main.653a07da.css.map": "./static/css/main.653a07da.css.map",
+    "main.5893fe36.js.map": "./static/js/main.5893fe36.js.map",
     "787.606b69ae.chunk.js.map": "./static/js/787.606b69ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.276e4f2e.css",
-    "static/js/main.34a423d0.js"
+    "static/css/main.653a07da.css",
+    "static/js/main.5893fe36.js"
   ]
 }

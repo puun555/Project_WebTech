@@ -72,7 +72,7 @@ const MainPage = (props)=>{
         
     const didMount = useRef(false);
     useEffect(() => {
-        if(Logined == 1){
+        if(Logined === 1){
             if(NewItems == null) {
                 setNewItem([]);
               }
@@ -95,7 +95,7 @@ const MainPage = (props)=>{
                     <div className='lef-mainpage'>
                         <a>All Product</a>
                         <h1>SHOP: DRINKING</h1>
-                        <a>30 PRODUCT</a>
+                        <a>30 Products</a>
                     </div>
                     <div className='right-mainpage'>
                         <div className='search-bar'>
@@ -108,8 +108,7 @@ const MainPage = (props)=>{
                                     autoFocus required 
                                     value={searchText}
                                     onChange={(event)=>{setSeacrhText(event.target.value)}}
-                                    />
-                                <button>Go</button>  
+                                    />  
                             </form>
                         </div>  
                         <Cart data={NewItems} delData={DelDataFormCart} count={countItems} addData={GetNewDataFromShowItem}></Cart>

@@ -1,10 +1,14 @@
 .path-page p {
     font-size: 20px;
-    margin: 0;
+    text-align: center;
 }
 
 .info1 {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-con {
@@ -19,4 +23,5 @@
 
 .icon-img {
     width: 90px;
+    margin:20px;
 }

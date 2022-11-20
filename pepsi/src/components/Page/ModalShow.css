@@ -6,11 +6,10 @@
 }
 .left-modal{
 
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     width: 350px;
-    background-color: black;
+    background-color:transparent;
     margin-right: 2vw;
 }
 .left-modal img{
@@ -30,6 +29,9 @@
 .right-modal{
     padding: 1vw;
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-up{
     margin: 0;
@@ -56,30 +58,35 @@
     margin-right:  2vw;
 }
 .botton{
-    color: white;
+    color: rgb(0, 0, 0);
     transition: 5ms;
-    background-color: #EB6440;
+    background-color: #d47155ab;
 }
 .botton:focus{
-    background-color: black;
+    background-color: #EB6440;
 }
 #sizebtn{
     margin-bottom: 1.8vw;
 }
 .submitbutton{
+    position: relative;
     display: flex;
-    margin-left: 0vw;
-
+    border-radius: none;
+}
+.submitbutton .botton{
+    background: black;
+    color:white;
+    transition: .4s;
+    width: 8rem;
+}
+.submitbutton .botton:hover{
+    background: rgba(0, 0, 0, 0.808);
 }
 .Modalcontainer{
     background-color: white;
+    
 }
-.modal-content  {
 
-    -webkit-border-radius: 20px !important;
-    -moz-border-radius: 20px !important;
-    border-radius: 20px !important; 
-}
 .selected{
     margin-left: 2vw;
 }

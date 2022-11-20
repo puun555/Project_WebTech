@@ -1,16 +1,19 @@
+
 .cardItem{
     position: relative;
     width:  260px;
     height: 300px;
     background-color: white;
-    border-radius:  10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     overflow: hidden;
     border: 1px solid transparent;
     margin-bottom: 2vw;
 }
 
 .cardItem:hover{
-    border: 1px solid gray;
+    background: rgb(214, 214, 214);
 }
 
 .cardItem .imgBx{
@@ -37,11 +40,11 @@
 
 }
 .price{
-    color: #EB6440;
+    color: #5e5e5e;
 }
 .cardItem.contentBx .price{
     color: #EB6440;
-    margin-bottom: 5px;
+    
 
 }
 .cardItem .contentBx{
@@ -65,14 +68,13 @@
     background: 
       linear-gradient(#EB6440 0 0) 
       bottom/100% var(--_d, 0) no-repeat;
-      border-radius: 10px;
-    transition: 0.3s;
 }
+
 .cardItem:hover .contentBx .buy{
     
     cursor: pointer;
     text-align: center;
-  
+    
     align-items: center;
     width: 120px;
     --_d: 100%;
@@ -82,4 +84,11 @@
 
 .buy{
     text-decoration: none;
+    padding: 5px;
+}
+.contentBx h3, .contentBx a{
+    margin: 5px;
+}
+.contentBx p{
+    margin-bottom: 0;
 }

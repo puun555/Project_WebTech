@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import Swal from 'sweetalert2';
 const FormPage = () => {
-
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginState, setLoginState] = useState(0);
@@ -24,7 +23,7 @@ const FormPage = () => {
             setLoginState(1)
             Swal.fire({
                 title: 'คุณได้ล็อกอินเรียบร้อยแล้ว',
-                text: 'ควย',
+                text: '',
                 icon: 'success',
             })
         }

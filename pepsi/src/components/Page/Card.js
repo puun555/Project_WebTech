@@ -13,8 +13,8 @@ const Cardproduct= (props) =>{
                 <img src={props.datas.img_product}></img>
             </div>
             <div className= "contentBx">
-                <h3>{props.datas.name}</h3>
-                <h3 className='price'>{props.datas.price}</h3>
+                <h3 style={{textAlign:"center"}}>{props.datas.name}</h3>
+                <p className='price'>{props.datas.price} Bath</p>
                 <a className='buy' onClick={() => setModalShow(true)}>Add to cart</a>
             </div>
             <MyVerticallyCenteredModal

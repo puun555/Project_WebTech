@@ -74,26 +74,26 @@ const  MyVerticallyCenteredModal = (props)=>{
                     </div>
                     <div className='button-group'>
                     <h2 className='pinbutton'>Select product</h2>
-                           <div id='sizebtn' role="button" className="rounded d-flex justify-content-center align-items-center botton"
+                           <div id='sizebtn' role="button" className=" d-flex justify-content-center align-items-center botton" 
                             style={{
                             color: "white",
-                            width: "4rem",
-                            height: "4rem",
+                            width: "7rem",
+                            height: "2.5rem",
                             bottom: 0,
                             right: 0,
                             transform: "translate(25%, 25%)",
                             marginRight: '2vw'
                             }}
                             onClick={()=>getSize( "1")}
-                            tabIndex="1">
+                            tabIndex="1" selected>
                                 1 Can
                             
                            </div>
-                           <div id='sizebtn'role="button" className="rounded  d-flex justify-content-center align-items-center botton"
+                           <div id='sizebtn'role="button" className="  d-flex justify-content-center align-items-center botton"
                             style={{
                             color: "white",
-                            width: "4rem",
-                            height: "4rem",
+                            width: "7rem",
+                            height: "2.5rem",
                             bottom: 0,
                             right: 0,
                             transform: "translate(25%, 25%)",
@@ -105,7 +105,7 @@ const  MyVerticallyCenteredModal = (props)=>{
                            </div>
                     </div>
                         <div className='submitbutton'>
-                            <a type="button" className="rounded  btn btn-primary btn-lg btn-block bg-dark agear"
+                            <a type="button" className=" d-flex justify-content-center align-items-center botton" style={{padding:"10px"}}
                                 onClick={()=>getData(props, Size)}
                             >Add to cart</a>
                         </div>

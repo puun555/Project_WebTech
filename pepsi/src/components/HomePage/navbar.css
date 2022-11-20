@@ -59,13 +59,13 @@
 	transform: perspective(1px) translateZ(0);
 	position: relative;
 	transition-timing-function: cubic-bezier(.86, .01, .15, .99);
-	transition-duration: 0.4s;
+	transition-duration: 0.2s;
 }
 .navbar-right .navbar-item:before {
 	background: linear-gradient(to bottom, #f86c2c, #1e1e1e);
 	transform: scaleY(0);
 	transform-origin: 0% 0%;
-	transition: 0.4s cubic-bezier(.86, .01, .15, .99);
+	transition: 0.2s cubic-bezier(.86, .01, .15, .99);
 }
 
 .navbar-right .navbar-item:hover:before {
@@ -104,10 +104,10 @@
 .uiPeple{
     cursor: pointer;
     margin-top: -6px;
+    transition: 0.4s;
 }
 .uiPeple:hover{
-    border-radius: 20px;
-    border: 2px solid white;
+   transform: scale(1.2);
 }
 /* .navbar-center{
     display: flex;

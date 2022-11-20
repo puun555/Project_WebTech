@@ -16,21 +16,26 @@ const Cart = (props) =>{
 
     const [showCount, setShowCount] = useState(false)
     let arCount = []
-    let arrCount =[]
+    let arrCount = []
     let sum = 0
-
-    arCount = props.data.map(data=>data)
-    arrCount = arCount.map(data=>data.count)
-    for (let i = 0; i < arrCount.length; i+=1){
-        sum += arrCount[i]
-    }
+  
     const [count, setCount] = useState(0)
+
+    if( props.data != null){
+        arCount = props.data.map(data=>data);
+        arrCount = arCount.map(data=>data.count)
+        for (let i = 0; i < arrCount.length; i+=1){
+            sum += arrCount[i]
+        }
+       
+    } 
     useEffect(()=>{
-        if(props.data.length > 0){
+        if(props.data){
             setShowCount(true)
         }
         setCount(sum)
-    })
+    },[props.data])
+    
     return( 
         <>
             <Button className='button-market'
@@ -58,7 +63,7 @@ const Cart = (props) =>{
                                 {count}
                         </div>}
                 </Button>
-                <MyOffcanvas show={show} onHide={handleClose} data={props.data} Deldata={getDelFormOffcanvas} addData={getAddFormofocanvas}></MyOffcanvas>
+                <MyOffcanvas show={show} onHide={handleClose} data={props.data} Deldata={getDelFormOffcanvas} addData={getAddFormofocanvas} > </MyOffcanvas>
         </>
     )
 }

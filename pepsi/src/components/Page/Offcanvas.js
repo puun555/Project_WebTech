@@ -2,7 +2,8 @@ import Button from 'react-bootstrap/esm/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './OffCanvas.css'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import {CiLogin,CiDollar} from "react-icons/ci";
 const MyOffcanvas = (props)=>{
     const DelData = (data)=>{
         props.Deldata(data)
@@ -10,18 +11,36 @@ const MyOffcanvas = (props)=>{
     const AddData= (data)=>{
         props.addData(data)
     }
+    const [data, setData] = useState([])
+    const [usePrice, setUsePrice] = useState(0)
+    let arPrice = []
+    let arrPrice = []
+    let price = 0
+    useEffect(()=>{
+        if(props.data){
+            setData(props.data)
+            arPrice  = props.data.map(data=> data.price)
+            arrPrice = arPrice.map(data =>data)
+            for(let i = 0; i<arrPrice.length ; i++){
+                price += arrPrice[i]
+            }
+            setUsePrice(price)
+        }else{
+            
+        }
+    },[props.data])
     const [Logined, setLogined] = useState(JSON.parse(localStorage.getItem('login')))
     return(
-        <Offcanvas show={props.show} onHide={props.onHide} placement='end'>
-        <Offcanvas.Header >
-            <div style={{display:"flex",flexDirection:"column"}}>
-                <h1>Your Items</h1>
-                <h1>เกียร์หน้าหี</h1>
+        <Offcanvas show={props.show} onHide={props.onHide} placement='end' className="offCanvas-body">
+        <Offcanvas.Header>
+            <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
+                <h4><strong>ตะกร้าสินค้า</strong></h4>
+                <h4>ราคารวม {usePrice} บาท</h4>
             </div>
-            {Logined === 1?<Link to="/payment"> <a>Shopping</a> </Link>:<Link to="/login"><a>Login</a></Link>}
+            {Logined === 1?<Link to="/payment"> <CiDollar className="offcanvas-icon"/> </Link>:<Link to="/login"><CiLogin className="offcanvas-icon"/></Link>}
         </Offcanvas.Header>
         <Offcanvas.Body>
-            {props.data.map(data=>(
+            {data.map(data=>(
                 <div key={data.id}>
                     <hr></hr>
                     <div className='box-offCanvas'>
@@ -46,6 +65,7 @@ const MyOffcanvas = (props)=>{
             ))}
         </Offcanvas.Body>
       </Offcanvas>
+      
     )
 }
 export default MyOffcanvas

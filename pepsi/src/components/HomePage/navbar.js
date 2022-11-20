@@ -97,15 +97,15 @@ const Navbar = () => {
                     {/* <li><Link to="/contact"><div className='navbar-item gradient'>contact us</div></Link></li> */}
                     <li><Link to="/purches"><a><div className='navbar-item gradient' id='buy'>buy products</div></a></Link></li>
                     {Logined === 0 ?<li><Link to="/login"><a><CiUser className='uiPeple'
-                        style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
+                        style={{width:'40px', color: '#f86c2c', height:'50px', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiUser></a></Link></li>: Logined == null ?<li><Link to="/login"><a
                     onClick={()=>loging()}><CiUser className='uiPeple'
-                    style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
+                    style={{width:'40px', color: '#f86c2c', height:'50px', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiUser></a></Link></li>:
                     <li><Link to="/">
                         <a onClick={()=>loging()}>
                         <CiLogout className='uiPeple'
-                        style={{width:'3vw', color: '#f86c2c', height:'1.8vw', marginLeft:'1.5vw', marginRight:'2vw'}}
+                        style={{width:'40px', color: '#f86c2c', height:'50px', marginLeft:'1.5vw', marginRight:'2vw'}}
                     ></CiLogout></a></Link></li>}
                 </Navul>
             </div>

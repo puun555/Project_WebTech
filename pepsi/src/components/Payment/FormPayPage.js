@@ -1,6 +1,6 @@
 import '../Payment/FormPayPage.css'
-
-
+import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 const FormPayPage = () => {
     return(
         <form className='pay-form'>
@@ -30,11 +30,15 @@ const FormPayPage = () => {
                 <p>หลักฐานการชำระเงิน</p>
                 <input id="flie-up" type="file" />
             </div>
-            <a href='/purches'>
+            <Link to="/payment" onClick={() => Swal.fire({
+                                title: 'คุณได้สั่งซื้อเรียบร้อยแล้ว',
+                                text: 'เราจะรีบนำพัสดุไปส่ง!',
+                                icon: 'success',
+                            })}>
                 <div className='butt'>
                     Submit
                 </div>
-            </a>
+            </Link>
         </form>
     );
 }
