@@ -13,6 +13,9 @@
 .pay-form {
     padding: 30px;
 }
+.pay-form .butt:hover{
+    background: #f86d2ce0;
+}
 
 .pay-form div{
     margin-bottom: 10px;
