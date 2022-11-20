@@ -67,17 +67,22 @@
     font-size: 3vh;
 }
 .b-item-img {
-    width: 30vh;
+    width: 35vh;
     /* min-height: 200px; */
 }
 @media screen and (max-width: 1400px){
     .b-item-img {
-        max-width: 25vh;
+        max-width: 35vh;
     }
 }
 @media screen and (max-width: 1000px){
     .b-item-img {
-        max-width: 20vh;
+        max-width: 30vh;
+    }
+}
+@media screen and (max-width: 800px){
+    .b-item-img {
+        max-width: 25vh;
     }
 }
 .b-item-box {
@@ -119,7 +124,7 @@
 }
 .banner-swiper{
     position: relative;
-    top: 5%;
+    bottom: 0%;
 }
 
 .swiper-button-prev, .swiper-button-next {
