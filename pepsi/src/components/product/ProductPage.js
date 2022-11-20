@@ -7,8 +7,8 @@ import SPRITE from "./ProductDetail/img_products/Sprite-Logo.png"
 import SCHWEPPES from "./ProductDetail/img_products/Schweppes-Logo.png"
 import PepsiIcon from "./ProductDetail/img_products/Pepsi-Icon.png";
 import FantaIcon from "./ProductDetail/img_products/Fanta-Icon.png";
-import SchweppesIcon from "./ProductDetail/img_products/Schweppes-Icon.png";
-import SpriteIcon from "./ProductDetail/img_products/Sprite-Icon.jpg";
+import SchweppesIcon from "./ProductDetail/img_products/schweppes.png";
+import SpriteIcon from "./ProductDetail/img_products/Sprite-Icon.png";
 import "./ProductPage.css"
 import { useState,useEffect} from "react";
 import Footer from "../HomePage/footer";
