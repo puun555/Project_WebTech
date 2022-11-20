@@ -51,14 +51,12 @@ const MyOffcanvas = (props)=>{
                         </div>
                         <div className='right-offCanvas'>
                             <h5>{data.name}</h5>
-                            <p>{data.price} บาท</p>
-                            <p>{data.count} ขิ้น</p>
+                            <p>{data.price} Baht</p>
+                            <p>{data.count} Item</p>
                             <div className='button-pack'>
                                 <a type="button" className="btn btn-primary btn-xs btn-block bg-dark" onClick={()=>AddData(data)}>+</a>
                                 <a type="button" className="btn btn-primary btn-xs btn-block bg-dark" onClick={()=>DelData(data)}>-</a>
                             </div>
-                            
-                           
                         </div>
                     </div>
                 </div>
