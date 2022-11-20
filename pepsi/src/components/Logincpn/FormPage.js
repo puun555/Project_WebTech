@@ -3,58 +3,84 @@ import { Link,  useNavigate, Navigate} from "react-router-dom";
 import { useState, useEffect} from 'react'
 import Swal from 'sweetalert2';
 const FormPage = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    // const [username, setUsername] = useState('');
+    // const [password, setPassword] = useState('');
     const [loginState, setLoginState] = useState(0);
-    const navigate = useNavigate();
-    const handleInput = event => {
-        setUsername(event.target.value);
-    };
-    const handleInput2 = event => {
-        setPassword(event.target.value);
-    };
-    const link = "/"
+    
+    // const handleInput = event => {
+    //     setUsername(event.target.value);
+    // };
+    // const handleInput2 = event => {
+    //     setPassword(event.target.value);
+    // };
+    const [one , setOne] = useState(false)
     const submition = () => {
-        if (username.length === 0 || password.length === 0) {
+        if (!one) {
             Swal.fire({
                 title: 'Your Username or Password incorrect',
                 text: '',
-                icon: '',
+                icon: 'error',
             })
+            
         }
-        else {
+        if(one) {
             setLoginState(1)
             Swal.fire({
                 title: 'Login Success!\nEnjoy Your Shopping!',
                 text: '',
                 icon: `success`,
             })
+            window.location.reload()
         }
     }
-    const items = JSON.parse(localStorage.getItem('items'));    
-    const [login, setLogin] = useState(localStorage.getItem('login'))
+  
     useEffect(() => {
         localStorage.setItem('login', JSON.stringify(loginState));
     }, [loginState]);
    
     console.log(loginState)
+
+    const [data, setData] = useState({
+        username: '',
+        password: ''
+      });
+    const database = JSON.parse(localStorage.getItem('IDPASSWORD'));
+ 
+    const changeHandler = (e) => {
+        setData({...data, [e.target.name]: e.target.value})
+      }
+      const checkUser = () => {
+        const usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
+        
+        if(usercheck) {
+          console.log("Login successful");
+          setOne(true)
+        }else {
+          console.log("Wrong password or username");
+        }
+        // console.log(uname);
+        console.log(usercheck);
+      }
+      useEffect(() => {
+        checkUser(database)
+     }, [data.username, data.password])
+
         return (
             <div className='box-login'>
                 <form className='form-page'>
                     <h1>Who wants <span>Drinks?</span></h1>
                     <div className='input-box'>
                         <p>Username</p>
-                        <input className='un' type='text' onChange={handleInput} />
+                        <input className='un' type='text' onChange={changeHandler}  name="username"/>
                     </div>
                     <div className='input-box'>
                         <p>Password</p>
-                        <input type='password' onChange={handleInput2} />
+                        <input type='password' onChange={changeHandler} name="password" />
                     </div>
                     <div className='buttbox'>
-                        <Link to="/register" onClick={submition} className="to-reg">Register</Link>
-                        <Link onClick={submition} className="a">Login</Link>
+                        <Link to="/register"  className="to-reg">Register</Link>
+                        {setOne ?<Link paht="/" className='a' onClick={submition }>login</Link>:<a className='a' onClick={submition }>Login</a>}
                     </div>
-                    {/* <a href="/project/it1/test_mai/#/purches" ></a> */}
                 </form>
             </div>
         );
