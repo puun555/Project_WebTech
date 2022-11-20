@@ -60,10 +60,11 @@
 .botton{
     color: rgb(0, 0, 0);
     transition: 5ms;
-    background-color: #d47155ab;
+    background-color: #d47055;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .botton:focus{
-    background-color: #EB6440;
+    transform: scale(1.5vw);
 }
 #sizebtn{
     margin-bottom: 1.8vw;
