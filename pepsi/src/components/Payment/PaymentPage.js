@@ -8,11 +8,13 @@ const Payment = () => {
     return(
         <>
             <Navbar></Navbar>
-            <div className="payment-card">
-                <h1>Payment</h1>
-                <PathPay/>
-                <FormPayPage/>
-                <MyOffcanvas></MyOffcanvas>
+            <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+                <div className="payment-card">
+                    <h1>Payment</h1>
+                    <PathPay/>
+                    <FormPayPage/>
+                    <MyOffcanvas></MyOffcanvas>
+                </div>
             </div>
         </>
     );
