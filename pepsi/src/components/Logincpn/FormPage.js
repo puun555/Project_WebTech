@@ -51,7 +51,7 @@ const FormPage = () => {
                         <input type='password' onChange={handleInput2} />
                     </div>
                     <div className='buttbox'>
-                        <a href="/purches" onClick={submition} className="to-reg">Register</a>
+                        <Link path="/register" onClick={submition} className="to-reg">Register</Link>
                         <Link path="/purches" onClick={submition} className="a">Login</Link>
                     </div>
                     {/* <a href="/project/it1/test_mai/#/purches" ></a> */}
