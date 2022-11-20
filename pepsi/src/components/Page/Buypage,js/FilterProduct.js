@@ -28,7 +28,7 @@ const FilterProduct = (props)=>{
                     <a onClick={()=>sendFilterData("Sprite")} className='name-checkbox'>Sprite</a>
                 </div>
                 <div className='check-chose'>
-                    <a onClick={()=>sendFilterData("schweppes")} className='name-checkbox'>schweppes</a>
+                    <a onClick={()=>sendFilterData("schweppes")} className='name-checkbox'>Schweppes</a>
                 </div>
              </div> 
         </Container> 
