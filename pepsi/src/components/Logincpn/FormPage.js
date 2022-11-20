@@ -45,13 +45,14 @@ const FormPage = () => {
         password: ''
       });
     const database = JSON.parse(localStorage.getItem('IDPASSWORD'));
- 
+    const usercheck = undefined
     const changeHandler = (e) => {
         setData({...data, [e.target.name]: e.target.value})
       }
       const checkUser = () => {
-        const usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
-        
+        if(database != null){
+            usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
+        }
         if(usercheck) {
           console.log("Login successful");
           setOne(true)
