@@ -45,7 +45,7 @@ const FormPage = () => {
         password: ''
       });
     const database = JSON.parse(localStorage.getItem('IDPASSWORD'));
-    const usercheck = undefined
+    let usercheck = undefined
     const changeHandler = (e) => {
         setData({...data, [e.target.name]: e.target.value})
       }

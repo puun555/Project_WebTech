@@ -23,7 +23,7 @@ const InfoReg = () => {
         if(pass1 !== pass2){
             Swal.fire({
                 title: 'password ต้องตรงกันนะ',
-                text: 'ควย!',
+                text: '',
                 icon: 'error',
             })
          
@@ -31,7 +31,7 @@ const InfoReg = () => {
         else {
             Swal.fire({
                 title: 'คุณได้สมัครเรียบร้อย',
-                text: 'ควย!',
+                text: 'ยินดีตอนรับ!',
                 icon: 'success',
             })
             setCheck(true)
