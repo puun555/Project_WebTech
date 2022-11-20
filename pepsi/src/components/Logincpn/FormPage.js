@@ -21,7 +21,6 @@ const FormPage = () => {
                 text: '',
                 icon: 'error',
             })
-            setLoginState(1)
         }
         if(one) {
             setLoginState(1)
@@ -30,7 +29,7 @@ const FormPage = () => {
                 text: '',
                 icon: `success`,
             })
-            window.location.reload()
+            setOne(false);
         }
     }
   
@@ -45,17 +44,16 @@ const FormPage = () => {
         password: ''
       });
     const database = JSON.parse(localStorage.getItem('IDPASSWORD'));
-    let usercheck = undefined
     const changeHandler = (e) => {
         setData({...data, [e.target.name]: e.target.value})
       }
       const checkUser = () => {
-        if(database != null){
-            usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
-        }
+        
+        const usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
+        
         if(usercheck) {
           console.log("Login successful");
-          setOne(true)
+          setOne(true);
         }else {
           console.log("Wrong password or username");
         }
