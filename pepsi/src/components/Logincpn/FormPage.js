@@ -21,7 +21,7 @@ const FormPage = () => {
                 text: '',
                 icon: 'error',
             })
-            
+            setLoginState(1)
         }
         if(one) {
             setLoginState(1)
