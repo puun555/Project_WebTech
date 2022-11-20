@@ -7,11 +7,13 @@ const Payment = () => {
     return(
         <>
             <Navbar></Navbar>
-            <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+            <div className="payment-bg">
                 <div className="payment-card">
                     <h1>Payment</h1>
-                    <PathPay/>
-                    <FormPayPage/>
+                    <div style={{display:"flex"}}>
+                        <PathPay/>
+                        <FormPayPage/>
+                    </div>
                 </div>
             </div>
         </>

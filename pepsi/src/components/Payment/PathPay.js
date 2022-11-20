@@ -3,7 +3,7 @@ import '../Payment/PathPay.css'
 const PathPay = () => {
     return (
         <div className="path-page">
-            <p>ช่องทางการชำระเงิน</p>
+            <p><strong>ช่องทางการชำระเงิน</strong></p>
             <div className="img-con">
                 <div className='pp'>
                     <img className='qr-img' src='https://cdn.discordapp.com/attachments/1026345569964273774/1043013370074370068/unknown.png'></img>

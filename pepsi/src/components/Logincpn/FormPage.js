@@ -1,12 +1,12 @@
 import '../Logincpn/FormPage.css'
-import { Link } from "react-router-dom";
+import { Link,  useNavigate} from "react-router-dom";
 import { useState, useEffect } from 'react'
 import Swal from 'sweetalert2';
 const FormPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginState, setLoginState] = useState(0);
-    
+    const navigate = useNavigate();
     const handleInput = event => {
         setUsername(event.target.value);
     };
@@ -51,8 +51,8 @@ const FormPage = () => {
                         <input type='password' onChange={handleInput2} />
                     </div>
                     <div className='buttbox'>
-                        <Link path="/register" onClick={submition} className="to-reg">Register</Link>
-                        <Link path="/purches" onClick={submition} className="a">Login</Link>
+                        <Link to="/register" onClick={submition} className="to-reg">Register</Link>
+                        <Link to="/" onClick={submition} className="a">Login</Link>
                     </div>
                     {/* <a href="/project/it1/test_mai/#/purches" ></a> */}
                 </form>

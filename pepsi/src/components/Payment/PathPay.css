@@ -4,7 +4,6 @@
 }
 
 .info1 {
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +15,8 @@
 }
 
 .qr-img {
-    padding: 50px;
-    width: 400px;
+    padding: 20px;
+    width: 300px;
     border-radius: 60px;
 }
 
