@@ -3,7 +3,6 @@ import PathPay from './PathPay';
 import Swal from 'sweetalert2';
 import '../Payment/PaymentPage.css'
 import Navbar from '../HomePage/navbar';
-import MyOffcanvas from '../Page/Offcanvas';
 const Payment = () => {
     return(
         <>
@@ -13,7 +12,6 @@ const Payment = () => {
                     <h1>Payment</h1>
                     <PathPay/>
                     <FormPayPage/>
-                    <MyOffcanvas></MyOffcanvas>
                 </div>
             </div>
         </>
