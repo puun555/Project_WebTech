@@ -48,17 +48,19 @@ const FormPage = () => {
         setData({...data, [e.target.name]: e.target.value})
       }
       const checkUser = () => {
-        
-        const usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
-        
-        if(usercheck) {
-          console.log("Login successful");
-          setOne(true);
-        }else {
-          console.log("Wrong password or username");
+        if (database !== null) {
+
+            const usercheck = database.find(user => (user.id === data.username && user.passWord === data.password));
+            
+            if(usercheck) {
+              console.log("Login successful");
+              setOne(true);
+            }else {
+              console.log("Wrong password or username");
+            }
+            // console.log(uname);
+            console.log(usercheck);
         }
-        // console.log(uname);
-        console.log(usercheck);
       }
       useEffect(() => {
         checkUser(database)
