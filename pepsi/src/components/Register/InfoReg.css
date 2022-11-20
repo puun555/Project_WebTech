@@ -10,7 +10,19 @@
     border-radius: 10px;
     scale: 1.2;
 }
-
+.ref-page::before{
+    content: "";
+    background-image: url('../Logincpn/login-background.png');
+    background-size: 600px;
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+}
 .username h1 {
     margin: 20px 40px;
     color: #F86C2C;

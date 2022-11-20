@@ -74,34 +74,16 @@ const  MyVerticallyCenteredModal = (props)=>{
                     </div>
                     <div className='button-group'>
                     <h2 className='pinbutton'>Select product</h2>
-                           <div id='sizebtn' role="button" className=" d-flex justify-content-center align-items-center botton" 
-                            style={{
-                            color: "white",
-                            width: "7rem",
-                            height: "2.5rem",
-                            bottom: 0,
-                            right: 0,
-                            transform: "translate(25%, 25%)",
-                            marginRight: '2vw'
-                            }}
+                           <div id='sizebtn' role="button" className="botton" 
                             onClick={()=>getSize( "1")}
                             tabIndex="1" selected>
-                                1 Can
+                                <p>1 Can</p>
                             
                            </div>
-                           <div id='sizebtn'role="button" className="  d-flex justify-content-center align-items-center botton"
-                            style={{
-                            color: "white",
-                            width: "7rem",
-                            height: "2.5rem",
-                            bottom: 0,
-                            right: 0,
-                            transform: "translate(25%, 25%)",
-                            marginRight: '2vw'
-                            }}
+                           <div id='sizebtn'role="button" className="  botton"
                             onClick={()=>getSize("6")}
                             tabIndex="1">
-                                1 Pack
+                                <p>1 Pack</p>
                            </div>
                     </div>
                         <div className='submitbutton'>
