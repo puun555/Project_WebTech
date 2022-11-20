@@ -16,13 +16,16 @@ const FormPage = () => {
 
     const submition = () => {
         if (username.length === 0 || password.length === 0) {
-            alert("Please Enter your Name")
-            
+            Swal.fire({
+                title: 'Your Username or Password incorrect',
+                text: '',
+                icon: '',
+            })
         }
         else {
             setLoginState(1)
             Swal.fire({
-                title: 'คุณได้ล็อกอินเรียบร้อยแล้ว',
+                title: 'Login Success!\nEnjoy Your Shopping!',
                 text: '',
                 icon: 'success',
             })
@@ -39,11 +42,19 @@ const FormPage = () => {
             <div className='box-login'>
                 <form className='form-page'>
                     <h1>Who wants <span>Drinks?</span></h1>
-                    <input className='un' type='text' placeholder='Username' onChange={handleInput} /><br/>
-                    <input type='password' placeholder='Password' onChange={handleInput2} /><br/>
-                    <Link path="/purches" onClick={submition} className="a">Login</Link>
+                    <div className='input-box'>
+                        <p>Username</p>
+                        <input className='un' type='text' onChange={handleInput} />
+                    </div>
+                    <div className='input-box'>
+                        <p>Password</p>
+                        <input type='password' onChange={handleInput2} />
+                    </div>
+                    <div className='buttbox'>
+                        <a href="/purches" onClick={submition} className="to-reg">Register</a>
+                        <Link path="/purches" onClick={submition} className="a">Login</Link>
+                    </div>
                     {/* <a href="/project/it1/test_mai/#/purches" ></a> */}
-                    <a href="/purches" onClick={submition} className="a">Login</a>
                 </form>
             </div>
         );
