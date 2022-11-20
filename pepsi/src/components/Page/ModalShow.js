@@ -18,7 +18,7 @@ const  MyVerticallyCenteredModal = (props)=>{
         size = Size
         if(Size==="1"){
             const NewDataAdd = {
-                name: props.items.name+"(ขิ้น)",
+                name: props.items.name+" (Can)",
                 pic : props.items.img_product,
                 price : props.items.price ,
                 id : props.items.id,
@@ -30,7 +30,7 @@ const  MyVerticallyCenteredModal = (props)=>{
         
         else if(Size==="6"){
             const NewDataAdd = {
-                name: props.items.name+"(pack)",
+                name: props.items.name+" (Pack)",
                 pic : props.items.img_product,
                 price : props.items.price *Size,
                 id : props.items.id + 50,
