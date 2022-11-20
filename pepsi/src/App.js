@@ -6,7 +6,8 @@ import MainPage from './components/Page/Mainpage.js'
 import ProductDetail from './components/product/ProductDetail/ProductDetail'
 import LoginPage from './components/Logincpn/LoginPage'
 import Payment from './components/Payment/PaymentPage';
-import ContactPage from './components/Contact/contact'
+import ContactPage from './components/Contact/contact';
+import RegisPage from './components/Register/RegisPage'
 function App() {
   return (
     <HashRouter>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/product/:page" element={<ProductDetail/>}></Route>
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/payment" element={<Payment/>}></Route>
+          <Route path="/register" element={<RegisPage/>}></Route>
         </Routes>
     </HashRouter>
   );
